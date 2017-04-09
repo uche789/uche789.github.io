@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Ball</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/ball.css">
+</head>
+<body>
+	<section class="stage">
+		<figure class="moon"></figure>
+		<figure class="hills"></figure>
+		<figure class="field"></figure>
+		<figure class="ball"><span class="shadow"></span></figure>
+	</section>
+	<button onclick="resume()">Resume</button><button onclick="pause()">Pause</button>
+
+	<script type="text/javascript">
+		var ball = document.querySelector('.ball'),
+			hills = document.querySelector('.hills');
+
+		function resume() {
+			if (ball) {
+				ball.classList.add('animate');
+			}
+
+			if (hills) {
+				hills.classList.add('animate');
+			}
+		};
+
+		function pause() {
+			if (ball) {
+				ball.classList.remove('animate');
+			}
+
+			if (hills) {
+				hills.classList.remove('animate');
+			}
+		};
+	</script>
+</body>
+</html>

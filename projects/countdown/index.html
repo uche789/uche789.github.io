@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Date Countdown</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"">
+	<style type="text/css">
+		body {
+			background-color: #e5e5e5;
+		}
+
+		.countDown {
+			font-family: 'Quicksand';
+			position: relative;
+			width: 450px;
+			height: 200px;
+			background-color: white;
+			opacity: 0.5;
+			border-top-right-radius: 5%;
+			border-top-left-radius: 5%;
+			margin: auto;
+		}
+
+		#wrapper {
+		    display: table-cell;
+		    width: 100vw;
+		    height: 100vh;
+		    vertical-align: middle;
+		}
+
+		.countDown p:first-child {
+			text-transform: uppercase;
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		.countDown .text-container {
+			position: absolute;
+		    top: 25%;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+
+		.countDown p {
+			font-size: 22px;
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 5px;
+		}
+
+		.progress-bar {
+			transition: width .3s ease-in;
+			-webkit-animation: progress 5s;
+			animation: progress 5s;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+		}
+
+		.progress-bar-loading {
+			background-color: #17a2b8;
+			height: 100%;
+		}
+
+		@keyframes progress {
+			from {
+				width: 0%;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="countDown">
+			<div class="text-container">
+				<p><span id="numberOfDays"></span> left</p>
+				<p>before launch</p>
+			</div>
+			<div class="progress-bar"><div class="progress-bar-loading"></div></div>
+		</div>
+	<div>
+
+	<script type="text/javascript">
+		var diffDays = (function () {
+				var startDateOptions = {
+						year: 2017,
+						month: 11, //0-11
+						day: 29 //1-31
+					},
+					endDateOptions = {
+						year: 2018,
+						month: 1, //0-11
+						day: 1 //1-31
+					},
+					startDate = new Date(),
+					endDate = new Date(),
+					oneDay = 24*60*60*1000;
+
+				endDate.setFullYear(endDateOptions.year, endDateOptions.month, endDateOptions.day);
+				startDate.setFullYear(startDateOptions.year, startDateOptions.month, startDateOptions.day);
+
+				return Math.round(Math.abs((startDate.getTime() - endDate.getTime())/(oneDay)));
+			})();
+
+		var countDownObject = {
+			setDate: function () {
+				var element = document.querySelector('#numberOfDays');
+
+				if (!element) { 
+					return;
+				}
+				
+				element.innerHTML = diffDays + ' ' + (diffDays > 1 ? 'days' : 'day');
+			},
+			initProgress: function () {
+				var element = document.querySelector('.progress-bar-loading'),
+					maxDays = diffDays > 365 ? (diffDays + 1) : 365;
+
+				if (!element) { 
+					return;
+				}
+				
+				element.style.width = ((maxDays - diffDays) / maxDays) * 100 + '%';
+			}
+		};
+
+		countDownObject.setDate();
+		countDownObject.initProgress();
+	</script>
+</body>
+</html>

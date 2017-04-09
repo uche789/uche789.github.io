@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example login screen</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			background-image: url('photo.jpeg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: cover;
+			font-family: Georgia, Arial;
+		}
+
+		#wrapper {
+			display: table-cell;
+			width: 100vw;
+			height: 100vh;
+			vertical-align: middle;
+		}
+
+		.sample-center-div {
+			margin: auto;
+			width: 100px;
+			height:100px;
+		} 
+
+		#boxed-container {
+			margin: auto;
+			max-width: 400px;
+			min-height: 300px;
+			background-color: rgba(255,255,255,0.8);
+			border: 1px solid black;
+			text-align: center;
+		}
+
+		#boxed-container .header {
+			width: 100%;
+			padding-top: 10px;
+		}
+
+		#boxed-container .body { 
+			width: 100%;
+		}
+
+		#fixed-page-button:hover {
+			background-color: #afafaf;
+		}
+
+		#fixed-page-button {
+			position: absolute;
+			border-radius: 50%;
+			background-color: #e5e5e5;
+			bottom: 1%;
+			right: 1%;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+			opacity: 0.5;
+		}
+
+		#fixed-page-button > i {
+			margin: auto;
+			position: relative;
+			top: 25%;
+		}
+
+		.form-control {
+			padding: 2px;
+		}
+
+		#boxed-container .form-btn-container {
+			padding: 5px 15px 5px 5px;
+		}
+
+		#boxed-container .form-control input[type="text"], #boxed-container .form-control input[type="email"], #boxed-container .form-control input[type="password"], #boxed-container .form-control input[type="number"],
+		 .form-control textarea, #form-control select {
+			width: 90%;
+		}
+
+		.input-grey {
+			border: 0;
+			background-color: #888;
+			color: #ffffff; 
+		}
+
+		input::-webkit-input-placeholder {
+			font-style: italic;
+			font-weight: normal;
+		}
+		input:-moz-placeholder {
+			font-style: italic;
+			font-weight: normal;
+		}
+		input::-moz-placeholder {
+			font-style: italic;
+			font-weight: normal;
+		}
+		input::-moz-placeholder {
+			font-style: italic;
+			font-weight: normal;
+		}
+
+		.input-grey:focus {
+			border: 2px solid #333;
+		}
+
+
+		input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+			width: 100%;
+			outline: 0;
+			padding: 6px;
+			font-size: 1em;
+		}
+
+		.btn {
+			padding: 10px;
+			font-size: 1em;
+			outline-width: 0;
+			border: 0;
+			border-radius: 2px;
+		}
+
+		.btn-grey-simple {
+			background-color: #333333;
+			color: #fff;
+		}
+
+		.btn-grey-simple:focus {
+			background-color: #777;
+		}
+
+		.btn-primary {
+			opacity: 1;
+			background-color: #345fff;
+			color: #ffffff; 
+		}
+
+		.center-text {
+			text-align: center;
+		}
+
+		.left-text {
+			text-align: left;
+		}
+
+		.right-text {
+			text-align: right;
+		}
+
+		input[type]
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="boxed-container" class="center-div">
+			<div class="header">
+				<h3>Already a Member? Sign in</h3>
+			</div>
+			<div class="body">
+				<form novalidate="">
+					<div class="form-control">
+						<input class="input-grey" type="text" placeholder="Email Address" required />
+					</div>
+					<div class="form-control">
+						<input class="input-grey" type="password" placeholder="Password" required />
+					</div>
+					<div class="form-btn-container right-text">
+						<input class="btn btn-grey-simple" type="button" value="Login" />
+					</div>
+					<div class="form-control">
+						Do no have an account with us? Register <a href="#">here</a>.
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<div id="fixed-page-button"><i class="fa fa-share" aria-hidden="true"></i></div>
+</body>
+</html>

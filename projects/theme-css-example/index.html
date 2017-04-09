@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Simple example of theme styling using CSS variables with IE support.">
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Theme CSS Example</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/variables.css" id="default-variables">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" id="default-css">
+</head>
+
+<body>
+  <header>
+    <div>CSS Vars Example</div>
+    <div>
+      <label>Select a theme: </label>
+      <select id="theme-selection">
+        <option value="default" selected>Default</option>
+        <option value="theme">Theme</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div class="content">
+      <h3>Intro</h3>
+      <p></p>This page provides a simple example on how you can manage multiple themes using CSS variables. The <a
+        href="https://jhildenbiddle.github.io/css-vars-ponyfill/#/" target="_blank"
+        rel="noreferrer noopener">css-vars-ponyfill</a> library allows support for legacy browsers (IE anyone &#128578).
+      </p>
+
+      <p><small>** The theme stylesheets are inserted dynamically to the page and the css-vars-ponyfill re-compiles the
+          styles.</small></p>
+
+      <h3>Solution</h3>
+      The CSS variables are defined in the <code>:root</code> selector. We'll define the default and theme variables in two separate files:
+
+      <p><strong><code>default-variables.css</code></strong></p>
+      <code>
+        :root {<br/>
+        <span class="tab">--font-family: Georgia, Cambria, san-serif;</span><br/>
+        <span class="tab">--text-color: #000;</span><br/>
+        }
+      </code>
+
+      <p><strong><code>theme-variables.css</code></strong></p>
+      <code>
+        :root {<br/>
+        <span class="tab">--font-family: 'Open Sans', sans-serif</span><br/>
+        <span class="tab">--text-color: #666;</span><br/>
+        }
+      </code>
+
+      <p>Then we'll add both stylesheets to the page in true cascading fashion.</p>
+      <code>
+          &lt;head&gt;<br/>
+          <span class="tab"></span>&lt;link ref=&quot;stylesheet&quot; text=&quot;text/css&quot; href=&quot;default-variables.css&quot;&gt;</span><br/>
+          <span class="tab"></span>&lt;link ref=&quot;stylesheet&quot; text=&quot;text/css&quot; href=&quot;theme-variables.css&quot;&gt;</span><br/>
+          &lt;head&gt;
+      </code>
+
+      <p><small><strong>View the source code of this page on <a href="https://github.com/uche789/theme-css-example">Github</a>.</strong></small></p>
+
+      <h3>Button Stying</h3>
+      <p><button class="btn">Button</button> <button class="btn btn-secondary" disabled>Disabled</button></p>
+      <p><button class="btn btn-primary">Primary</button> <button class="btn btn-secondary">Seconday</button></p>
+    </div>
+  </main>
+  <footer>
+  </footer>
+
+  <!-- All script tags -->
+  <script src="assets/js/css-vars-ponyfill2.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

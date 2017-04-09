@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500px" height="200px" viewBox="0 0 1500 200">
+	<polygon points="150,60 0,200 300,200" fill="#20374f" stroke="#20374f" stroke-linejoin="round"
+             stroke-width="40" class="triangle" style="transform: translate(0px)" />
+    <polygon points="150,60 0,200 300,200" fill="#20374f" stroke="#20374f" stroke-linejoin="round"
+             stroke-width="40" class="triangle" style="transform: translate(300px)" />
+    <polygon points="150,60 0,200 300,200" fill="#20374f" stroke="#20374f" stroke-linejoin="round"
+             stroke-width="40" class="triangle" style="transform: translate(600px)" />
+    <polygon points="150,60 0,200 300,200" fill="#20374f" stroke="#20374f" stroke-linejoin="round"
+             stroke-width="40" class="triangle" style="transform: translate(900px)" />
+    <polygon points="150,60 0,200 300,200" fill="#20374f" stroke="#20374f" stroke-linejoin="round"
+             stroke-width="40" class="triangle" style="transform: translate(1200px)" />
+    <polygon points="150,60 0,200 300,200" fill="#20374f" stroke="#20374f" stroke-linejoin="round"
+             stroke-width="40" class="triangle" style="transform: translate(1500px)" />
+</svg>

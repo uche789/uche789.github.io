@@ -1,0 +1,49 @@
+body {
+	background-color: #f4f4f5;
+	font-family: 'Lato';
+	margin: 0;
+}
+
+header {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	margin: 0;
+}
+
+header .logo {
+	font-size: 22px;
+}
+
+header .additional-nav {
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	width: 100%;
+	height: 30px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+footer .links {
+	font-size: 14px;
+	min-height: 100px;
+	background-color: #fff;
+	border: 1px solid #f4f4f5;
+	width: 100%;
+}
+
+footer .legal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #f4f4f5;
+	font-size: 14px;
+	height: 40px;
+	width: 100%;
+}

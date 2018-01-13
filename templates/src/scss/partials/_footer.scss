@@ -1,0 +1,72 @@
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+footer .shop-links {
+	font-size: 14px;
+	min-height: 100px;
+	background-color: #fff;
+	border-top: 1px solid #f4f4f5;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+footer .legal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-top: 1px solid #f4f4f5;
+	font-size: 14px;
+	height: 40px;
+	width: 100%;
+
+	a {
+		text-decoration: none;
+		color: #7a7a7b;
+		margin: 0 10px 0 10px;
+		padding-bottom: 5px;
+
+		&:hover {
+			border-bottom: 2px solid #7a7a7b;
+		}
+	}
+}
+
+footer .info-links {
+	display: flex;
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 5px;
+
+	> div {
+		flex: 1;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+	}
+
+	.social-link {
+		background-color: black;
+	    color: white;
+	    padding: 10px;
+	    border-radius: 50%;
+	    height: 15px;
+	    width: 15px;
+	    text-align: center;
+	    display: inline-block;
+	    margin: 0px 5px 0 5px;
+	}
+
+	.payment {
+		justify-content: flex-end;
+
+		.icon {
+			font-size: 30px;
+			display: inline-block;
+		    margin: 0px 5px 0 5px;
+		}
+	}
+}

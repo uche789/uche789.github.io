@@ -24,23 +24,19 @@ header .navigation {
 	display: flex;
 	width: 80%;
 
-	> * {
-		flex: 1;
-	}
-
 	> div {
 		justify-content: flex-end;
 	    align-items: center;
 	    display: flex;
-	    flex-basis: 200px;
+	    width: 30%;
 	}
 
-	nav ul, nav li {
-		list-style: none;
-	}
-
-	nav li {
-		display: inline-block;
+	nav {
+		width: 70%;
+		
+		li {
+			display: inline-block;
+		}
 	}
 }
 
@@ -50,7 +46,7 @@ header .additional-nav {
 	font-size: 12px;
 	width: 100%;
 	height: 25px;
-	padding: 5px;
+	padding: 5px 0 5px 0;
 	display: flex;
 	align-items: center;
 

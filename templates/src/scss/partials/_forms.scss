@@ -1,0 +1,75 @@
+li {
+	display: inline-block;
+}
+
+ul, li {
+	list-style: none;
+}
+
+//***********************/
+// BUTTONS
+//**********************/
+
+@mixin btn() {
+	padding: 10px;
+	border: 0;
+	outline: 0;
+	border-radius: 3px;
+	min-width: 100px;
+	font-size: 13px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+textarea {
+	padding: 10px;
+	width: 100%;
+	outline: none;
+	border: 1px solid #e5e5e5;
+
+	&:focus {
+		border-color: #7a7a7b;
+	}
+
+	&:not(:focus).error {
+		border-color: #FF9494;
+	}
+}
+
+.form-input {
+	position: relative;
+	padding: 12px;
+
+	.error-label {
+		position: absolute;
+		color: #FF9494;
+		bottom: -5px;
+		font-size: 12px;
+	}
+}
+
+.btn-primary {
+	@include btn();
+
+	background-color: #000;
+	color: #fff;
+
+	&:hover, &:disabled {
+		background-color: #333;
+	}
+
+}
+
+.btn-default {
+	@include btn();
+
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+
+	&:hover, &:disabled {
+		border-color: #979797;
+	}
+
+}

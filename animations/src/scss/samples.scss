@@ -1,0 +1,68 @@
+@mixin box-side() {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
+
+.background-transtion {
+	@include box-side();
+	transition: 1s;
+	transition-delay: 0.5s;
+	
+	&:hover {
+		background-color: blue;
+	}
+}
+
+.transform-scale {
+	transition: 1s;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+
+	&:hover {
+		transform: scale(0.5);
+	}
+}
+
+.rotate-continous {
+	@include box-side();
+	animation: rotate 3s linear infinite;
+	animation-play-state: running;
+
+	&:hover {
+		animation-play-state: paused;
+	}
+
+	@keyframes rotate {
+		from {
+			transition: rotate(0deg)
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+}
+
+.multiple-backgrounds {
+	@include box-side();
+	animation: color-change 5s ease-in-out infinite;
+
+	@keyframes color-change {
+		0% {
+			background-color: red;
+		}
+		25% {
+			background-color: pink;
+		}
+		50% {
+			background-color: cyan;
+		}
+		75% {
+			background-color: lightblue;
+		}
+		100% {
+			background-color: blue;
+		}
+	}
+}

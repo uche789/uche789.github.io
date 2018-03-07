@@ -64,7 +64,7 @@
 
 .multiple-backgrounds {
 	@include box;
-	animation: color-change 5s ease-in-out infinite;
+	animation: color-change 5s 0s infinite ease-in-out alternate;
 
 	@keyframes color-change {
 		0% {
@@ -81,6 +81,41 @@
 		}
 		100% {
 			background-color: blue;
+		}
+	}
+}
+
+ul.fadtyle {
+	position: relative;
+	list-style-type: none;
+	
+	li {
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		animation-name: fade;
+		animation-iteration-count: infinite;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+
+		&:nth-child(1) {
+			animation-duration: 2s;
+		}
+
+		&:nth-child(2) {
+			animation-delay: 3s;
+		}
+	}
+
+	@keyframes fade {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
 		}
 	}
 }

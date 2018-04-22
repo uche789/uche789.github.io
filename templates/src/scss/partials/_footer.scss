@@ -1,16 +1,39 @@
 footer {
 	position: absolute;
-	bottom: 0px;
+	//bottom: 0px;
+	background-color: #f9f9f9;	
 	width: 100%;
 }
 
 footer .shop-links {
-	font-size: 14px;
-	min-height: 100px;
-	background-color: #fff;
+	min-height: 200px;
 	border-top: 1px solid #f4f4f5;
 	width: 100%;
 	padding-bottom: 5px;
+	display: flex;
+
+	div.section {
+		flex: 0 auto;
+		padding: 40px;
+
+		li {
+			padding-top: 5px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		&:last-child {
+			justify-content: flex-end;
+			flex: auto;
+			display: flex;
+		}
+	}
+
+	span.title {
+		font-weight: 700;
+	}
 }
 
 footer .legal {
@@ -19,25 +42,48 @@ footer .legal {
 	align-items: center;
 	background-color: #fff;
 	border-top: 1px solid #f4f4f5;
-	font-size: 14px;
 	height: 40px;
 	width: 100%;
 
 	a {
+		position: relative;
 		text-decoration: none;
 		color: #7a7a7b;
 		margin: 0 10px 0 10px;
 		padding-bottom: 5px;
 
-		&:hover {
-			border-bottom: 2px solid #7a7a7b;
+		&:hover::after {
+			background-color: #7a7a7b;
 		}
+	}
+}
+
+.social-link {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	display: inline-flex;
+	margin: 5px 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+.payment {
+	justify-content: flex-end;
+
+	.icon {
+		font-size: 30px;
+		display: inline-block;
+		margin: 0px 5px 0 5px;
 	}
 }
 
 footer .info-links {
 	display: flex;
-	background-color: #fff;
 	width: 100%;
 	padding-bottom: 5px;
 
@@ -48,27 +94,5 @@ footer .info-links {
 		align-items: center;
 	}
 
-	.social-link {
-		background-color: black;
-	    color: white;
-	    padding: 10px;
-	    border-radius: 50%;
-	    height: 15px;
-	    width: 15px;
-	    text-align: center;
-	    display: flex;
-	    margin: 0 5px;
-	    justify-content: center;
-	    align-items: center;
-	}
-
-	.payment {
-		justify-content: flex-end;
-
-		.icon {
-			font-size: 30px;
-			display: inline-block;
-		    margin: 0px 5px 0 5px;
-		}
-	}
+	
 }

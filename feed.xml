@@ -1,22 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-17T22:48:07+02:00</updated><id>/feed.xml</id><entry><title type="html">A banana</title><link href="/2019/07/17/screaming.html" rel="alternate" type="text/html" title="A banana" /><published>2019-07-17T00:00:00+02:00</published><updated>2019-07-17T00:00:00+02:00</updated><id>/2019/07/17/screaming</id><content type="html" xml:base="/2019/07/17/screaming.html">&lt;p&gt;And a man doesn’t live here&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-18T00:24:24+02:00</updated><id>/feed.xml</id><entry><title type="html">I started blogging…</title><link href="/2019/07/17/first-post.html" rel="alternate" type="text/html" title="I started blogging..." /><published>2019-07-17T00:00:00+02:00</published><updated>2019-07-17T00:00:00+02:00</updated><id>/2019/07/17/first-post</id><content type="html" xml:base="/2019/07/17/first-post.html">&lt;p&gt;This is my second attempt at writing a tech blog. I’m hoping I stick with it this time 🤞.&lt;/p&gt;
 
-&lt;p&gt;Hang on a second :D&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">And a man doesn’t live here Hang on a second :D</summary></entry><entry><title type="html">City of apples</title><link href="/2019/07/15/testing.html" rel="alternate" type="text/html" title="City of apples" /><published>2019-07-15T00:00:00+02:00</published><updated>2019-07-15T00:00:00+02:00</updated><id>/2019/07/15/testing</id><content type="html" xml:base="/2019/07/15/testing.html">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
+&lt;p&gt;I’ve been trying to find the right flat-file CMS that requires minimum time to set up and I discovered Jekyll. After about 4 hours, I have a blog hosted on github pages.&lt;/p&gt;
 
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;
+&lt;p&gt;This blog is primarily focused on frontend development but there will occassionally be other articles on other areas of IT and Computer Science.&lt;/p&gt;
 
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;
-
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe.</summary></entry></feed>
+&lt;p&gt;I hope you find this blog insightful. Happy reading 🙂!&lt;/p&gt;</content><author><name>thesimplearchitecture</name></author><summary type="html">This is my second attempt at writing a tech blog. I’m hoping I stick with it this time 🤞. I’ve been trying to find the right flat-file CMS that requires minimum time to set up and I discovered Jekyll. After about 4 hours, I have a blog hosted on github pages. This blog is primarily focused on frontend development but there will occassionally be other articles on other areas of IT and Computer Science. I hope you find this blog insightful. Happy reading 🙂!</summary></entry></feed>

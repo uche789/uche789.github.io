@@ -31,9 +31,14 @@ gulp.task('animations-scss', function () {
 		.pipe(gulp.dest('./animations/assets/css'));
 });
 
-gulp.task('watch', function (callback) {
+gulp.task('watch-scss', function (callback) {
 	runSequence(['default']);
 
 	gulp.watch('./templates/src/scss/**/*.scss', ['templates-scss']);
 	gulp.watch('./animations/src/scss/**/*.scss', ['animations-scss']);
+});
+
+gulp.task('watch-template', function (callback) {
+	runSequence(['templates-scss']);
+	gulp.watch('./templates/src/scss/**/*.scss', ['templates-scss']);
 });

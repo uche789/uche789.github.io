@@ -5,70 +5,79 @@ header {
 	margin: 0;
 }
 
-header .logo {
+.header-logo {
 	display: inline-block;
 	font-size: 22px;
 	width: 20%;
 	padding: 10px;
+	font-weight: 600;
 }
 
-header .main-nav {
-	min-height: 70px;
-	display: flex;
-	align-items: center;
-	background-color: #fff;
-	border-bottom: 1px solid #f4f4f5;
-}
-
-header .navigation-lg {
-	display: flex;
-	width: 80%;
-
-	> div {
-		justify-content: flex-end;
-	    align-items: center;
-	    display: flex;
-	    width: 30%;
-	}
-
-	nav {
-		width: 70%;
-		
-		ul {
-			display: flex;
-		}
-		
-		li {
-			padding-left: 5px;
-			padding-right: 5px;
-		}
-	}
-}
-
-header .additional-nav {
-	background-color: black;
-	color: white;
+.header-misc {
 	font-size: 12px;
 	width: 100%;
 	height: 25px;
 	padding: 5px 0 5px 0;
 	display: flex;
 	align-items: center;
+	background-color: white;
+
+	&.dark {
+		background-color: black;
+		color: white;
+
+		a {
+			color: white;
+		}
+	}
+
+	&.light {
+		background-color: black;
+		color: white;
+	}
 
 	a {
-		color: white;
+		color: black;
 		text-decoration: underline;
 		font-weight: 700;
 	}
 
-	> div {
+	.latest, .localized {
 		flex: 1;
 		text-align: center;
+	}
 
-		&:last-child {
-			justify-content: space-evenly;
-			display: flex;
-			max-width: 250px;
+	.localized {
+		justify-content: space-evenly;
+		display: flex;
+		max-width: 250px;
+
+		.icon {
+			padding: 0 10px;
+		}
+
+		.country {
+			border: 1px solid;
+			padding: 0 10px;
+			font-weight: 600;
 		}
 	}
 }
+
+@media only screen and (min-width: 909px) {
+    .header-misc {
+        .localized {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 908px) {
+    .header-misc {
+        .localized {
+            display: none;
+        }
+    }
+}
+
+@import "navigation";

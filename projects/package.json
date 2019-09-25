@@ -4,7 +4,9 @@
   "description": "Sample template and footer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scss": "gulp watch-scss",
+    "watch-template": "gulp watch-template"
   },
   "repository": {
     "type": "git",

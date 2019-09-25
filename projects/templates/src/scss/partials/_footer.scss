@@ -5,14 +5,15 @@ footer {
 	width: 100%;
 }
 
-footer .shop-links {
+.footer-shop-links {
 	min-height: 200px;
 	border-top: 1px solid #f4f4f5;
 	width: 100%;
 	padding-bottom: 5px;
 	display: flex;
+	flex-wrap: wrap;
 
-	div.section {
+	.section {
 		flex: 0 auto;
 		padding: 40px;
 
@@ -36,7 +37,7 @@ footer .shop-links {
 	}
 }
 
-footer .legal {
+.footer-legal {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,7 +59,7 @@ footer .legal {
 	}
 }
 
-.social-link {
+.footer-social-link {
 	background-color: black;
 	color: white;
 	padding: 10px;
@@ -72,7 +73,7 @@ footer .legal {
 	align-items: center;
 }
 
-.payment {
+.footer-payment {
 	justify-content: flex-end;
 
 	.icon {
@@ -82,7 +83,7 @@ footer .legal {
 	}
 }
 
-footer .info-links {
+.footer-info-links {
 	display: flex;
 	width: 100%;
 	padding-bottom: 5px;

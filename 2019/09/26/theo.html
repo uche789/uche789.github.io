@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+  <title>Blog &ndash; Layout Examples &ndash; Pure</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+    crossorigin="anonymous">
+
+  <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+
+  <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <!--<![endif]-->
+</head>
+
+<body>
+
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <div class="header">
+          <h1 class="brand-title">code is my life</h1>
+          <h2 class="brand-tagline">You are never too old to set another goal, or to dream a new dream.</h2>
+
+        <nav class="nav">
+  <ul class="nav-list">
+      
+      <li class="nav-item">
+        <a href="/" class="pure-button ">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/about.html" class="pure-button ">About</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="https://github.com/uche789" class="pure-button ">Github</a>
+      </li>
+    
+  </ul>
+</nav>
+      </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <h1>Design tokens with Theo</h1>
+<p>26 Sep 2019 - thesimplearchitecture</p>
+
+<p>In my never ending quest in finding the right CSS structure that will allow easy theming, I have done a lot of reading and research into design tokens and how this will help me achieve my aim of writing CSS that can easily be overriden with little effort.</p>
+
+<p>In short, design tokens are used to avoid hardcoded values that are reusable in your CSS. Design tokens are used to store variables such as typography, spacing and colours that will be shared across plaforms like web, iOS and Android. It’s a very similar concept with CSS variables, which contains values that are reused throughout a document. (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)</p>
+
+<p>It was during a discussion I had with a coworker abour CSS refactoring and design tokens that I discovered the existence of Theo. Theo is a tool developed by Salesforce that helps you automate the generation of your design tokens. Theo consumes JSON or YAML design token files and transforms the configured values into the format that best suits your needs.</p>
+
+<p>Below is a very simple JSON design token file (raw.json):</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"global"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"props"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"font-family"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Arial, sans-serif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-size-x-small"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10px"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-size"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-size-small"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11px"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-size"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-size-normal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13px"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-size"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-size-large"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22px"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-size"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-size-x-large"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24px"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-size"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-weight-light"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-weight"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-weight-normal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"400"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-weight"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-weight-bold"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"600"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-weight"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"font-weight-bolder"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"700"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"font-weight"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>I can then choose to output this raw values as SASS variables</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">theo</span><span class="p">.</span><span class="nx">convert</span><span class="p">({</span>
+        <span class="na">transform</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">web</span><span class="dl">"</span><span class="p">,</span>
+          <span class="na">file</span><span class="p">:</span> <span class="dl">"</span><span class="s2">raw.json</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="na">format</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">scss</span><span class="dl">"</span>
+        <span class="p">}</span>
+      <span class="p">})</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">scss</span> <span class="o">=&gt;</span> <span class="p">{</span>
+          <span class="c1">// save </span>
+      <span class="p">})</span>
+      <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Something went wrong: </span><span class="p">${</span><span class="nx">error</span><span class="p">}</span><span class="s2">`</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>The output:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$font-size-x-small</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="nv">$font-weight-bolder</span><span class="p">:</span> <span class="m">700</span><span class="p">;</span>
+<span class="nv">$font-size-large</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+<span class="nv">$font-size-normal</span><span class="p">:</span> <span class="m">13px</span><span class="p">;</span>
+<span class="nv">$font-size-x-large</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+<span class="nv">$font-size-small</span><span class="p">:</span> <span class="m">11px</span><span class="p">;</span>
+<span class="nv">$font-weight-bold</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+<span class="nv">$font-weight-normal</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="nv">$font-weight-light</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Below is a very simple YAML design token file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>props:
+  black:
+    value: '#000'
+  white:
+    value: '#fff'
+global:
+  type: colors
+  category: colors
+</code></pre></div></div>
+
+<p>Isn’t it just neat? It just works and your design tokens can easily be are sorted into categories. For smaller applications and personal projects, it’s a no brainer that Theo is a perfect soluton. I have yet to use Theo in a large-scale but I am confident that it would work just as well.</p>
+
+<p>If your still doubtful, Why not give Theo a shot and see how you like it 😁</p>
+
+<h4 id="recommended-readings">Recommended readings</h4>
+<ul>
+  <li><a href="https://github.com/salesforce-ux/theo-example">Theo Github</a></li>
+  <li><a href="https://css-tricks.com/what-are-design-tokens/">What Are Design Tokens?</a></li>
+  <li><a href="https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421">Tokens in Design Systems</a></li>
+</ul>
+
+    </div>
+  </div>
+
+</body>
+</html>

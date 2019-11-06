@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-26T01:06:10+02:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Design tokens with Theo</title><link href="http://localhost:4000/2019/09/26/theo.html" rel="alternate" type="text/html" title="Design tokens with Theo" /><published>2019-09-26T00:00:00+02:00</published><updated>2019-09-26T00:00:00+02:00</updated><id>http://localhost:4000/2019/09/26/theo</id><content type="html" xml:base="http://localhost:4000/2019/09/26/theo.html">&lt;p&gt;In my never ending quest in finding the right CSS structure that will allow easy theming, I have done a lot of reading and research into design tokens and how this will help me achieve my aim of writing CSS that can easily be overriden with little effort.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-06T08:50:55+01:00</updated><id>/feed.xml</id><entry><title type="html">10 Tips for clean code</title><link href="/2019/11/01/clean-code.html" rel="alternate" type="text/html" title="10 Tips for clean code" /><published>2019-11-01T00:00:00+01:00</published><updated>2019-11-01T00:00:00+01:00</updated><id>/2019/11/01/clean-code</id><content type="html" xml:base="/2019/11/01/clean-code.html">&lt;p&gt;I was listening to a YouTube video on Clean Code by &lt;a href=&quot;https://twitter.com/mtoppa&quot;&gt;Michael Toppa&lt;/a&gt; during a short break from work. This video is an awesome summary of what you should keep in my when you are coding.&lt;/p&gt;
+
+&lt;p&gt;If you’ve come across a bit of nasty code that you wrote months ago and wondered how to refactor it using clean code, then the tips in this video are a good place to start.&lt;/p&gt;
+
+&lt;p&gt;I highly recommend that you watch the video for more details (the video is at the end of this post). Below is the list of the 10 Tips he mentioned for making your code clean:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;You are responsible for the quality of your code&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use meaningful names&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Write code that expresses intent&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comments are often lies waiting to happen.
+Code should speak for itself whenever possible&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Boy Scout Rule: Leave the code better than you found it&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Single Responsible Principle (SPR)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Write tests (Test driven development (TDD))&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Work in short cycles: incremental and iterative&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Independent Architecture&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Practice, Practice, Practice!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UjhX2sVf0eg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>thesimplearchitecture</name></author><summary type="html">I was listening to a YouTube video on Clean Code by Michael Toppa during a short break from work. This video is an awesome summary of what you should keep in my when you are coding. If you’ve come across a bit of nasty code that you wrote months ago and wondered how to refactor it using clean code, then the tips in this video are a good place to start. I highly recommend that you watch the video for more details (the video is at the end of this post). Below is the list of the 10 Tips he mentioned for making your code clean: You are responsible for the quality of your code Use meaningful names Write code that expresses intent Comments are often lies waiting to happen. Code should speak for itself whenever possible Boy Scout Rule: Leave the code better than you found it Single Responsible Principle (SPR) Write tests (Test driven development (TDD)) Work in short cycles: incremental and iterative Independent Architecture Practice, Practice, Practice!</summary></entry><entry><title type="html">How to start as a frontend web developer</title><link href="/2019/09/30/part1-howto-fe-web-developer.html" rel="alternate" type="text/html" title="How to start as a frontend web developer" /><published>2019-09-30T00:00:00+02:00</published><updated>2019-09-30T00:00:00+02:00</updated><id>/2019/09/30/part1-howto-fe-web-developer</id><content type="html" xml:base="/2019/09/30/part1-howto-fe-web-developer.html">&lt;p&gt;As someone who has worked in the software industry for a few years, I would like to share what I think are the essential things you should know if you are interested in becoming a frontend web developer. These are the things I wished I had taken more seriously when I started out as a full-stack web developer (trust me, I made many mistakes in my early days).&lt;/p&gt;
+
+&lt;h2 id=&quot;1-learn-data-structures-and-algorithms&quot;&gt;1. Learn data structures and algorithms&lt;/h2&gt;
+
+&lt;p&gt;It’s alright to use resources such as EggHead, Coursera and Codeacademy to learn how to create your first web application but in my honest opinion, understanding data structures and algorithms is crucial for any programmer, developer or computer scientist. Data structures will allow you to organize data in a way that can be used more efficiently and understanding algorithms is key to problem-solving.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Check out &lt;a href=&quot;https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/&quot;&gt;Top 10 Algorithms and Data Structures for Competitive Programming&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I am hoping to cover data structures and algorithms in a separate article. Stay tuned!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-have-a-proper-understanding-of-javascript&quot;&gt;2. Have a proper understanding of Javascript&lt;/h2&gt;
+&lt;p&gt;Javascript is a powerful language that can be both flexible and structured. Don’t do my mistake of thinking JQuery is a replacement for Javascript 😅. It’s not!&lt;/p&gt;
+
+&lt;p&gt;Understanding concepts suchs as prototypes, modular design, and observer pattern will only help you to become a better Javascript developer (&lt;em&gt;for further reading, check out &lt;a href=&quot;https://medium.com/better-programming/javascript-design-patterns-25f0faaaa15&quot;&gt;JavaScript Design Patterns&lt;/a&gt;&lt;/em&gt;)&lt;/p&gt;
+
+&lt;h2 id=&quot;3-css-and-html-markup-are-inseparable&quot;&gt;3. CSS and HTML markup are inseparable&lt;/h2&gt;
+&lt;p&gt;One lesson I learned the hard way is that the way you write your HTML will determine how your clean and properly structured your CSS will be. If your HTML code is messy, you can bet that your CSS will be messy as well. It’s never too early to learn how to write proper HTML and CSS. I recommend ISOBAR’s Frontend &lt;a href=&quot;https://isobar-us.github.io/code-standards/#html_html&quot;&gt;HTML&lt;/a&gt; and &lt;a href=&quot;https://isobar-us.github.io/code-standards/#css_css&quot;&gt;CSS&lt;/a&gt; coding standards guide.&lt;/p&gt;
+
+&lt;p&gt;If you are using web frameworks such as React, Vue or Angular, always stick to creating simple, single-responsible components with scoped CSS. Think of components as lego blocks that will be used to build larger features or modules.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-study-and-code-a-lot&quot;&gt;4. Study and code a lot&lt;/h2&gt;
+&lt;p&gt;You can only get better by studing about programming, reading and writing code. Look for Javascript libraries and open-sourced projects on sites like &lt;a href=&quot;https://github.com&quot;&gt;Github&lt;/a&gt; to glean useful information on how to write clean and efficient code.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion-and-final-thoughts&quot;&gt;Conclusion and final thoughts&lt;/h2&gt;
+
+&lt;p&gt;I highly recommend referring to the &lt;a href=&quot;https://developer.mozilla.org&quot;&gt;Mdn web docs&lt;/a&gt; to build your knowlegde of web development and clear any doubts you might have regarding CSS, HTML and Javascript.&lt;/p&gt;
+
+&lt;p&gt;Becoming a skilled frontend developer takes time and effort, but with the right education, resources, tools and, most importantly, determination, you’ll definitely get there.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Goodluck on your journey!&lt;/em&gt;&lt;/p&gt;</content><author><name>thesimplearchitecture</name></author><summary type="html">As someone who has worked in the software industry for a few years, I would like to share what I think are the essential things you should know if you are interested in becoming a frontend web developer. These are the things I wished I had taken more seriously when I started out as a full-stack web developer (trust me, I made many mistakes in my early days). 1. Learn data structures and algorithms It’s alright to use resources such as EggHead, Coursera and Codeacademy to learn how to create your first web application but in my honest opinion, understanding data structures and algorithms is crucial for any programmer, developer or computer scientist. Data structures will allow you to organize data in a way that can be used more efficiently and understanding algorithms is key to problem-solving. Check out Top 10 Algorithms and Data Structures for Competitive Programming. I am hoping to cover data structures and algorithms in a separate article. Stay tuned! 2. Have a proper understanding of Javascript Javascript is a powerful language that can be both flexible and structured. Don’t do my mistake of thinking JQuery is a replacement for Javascript 😅. It’s not! Understanding concepts suchs as prototypes, modular design, and observer pattern will only help you to become a better Javascript developer (for further reading, check out JavaScript Design Patterns) 3. CSS and HTML markup are inseparable One lesson I learned the hard way is that the way you write your HTML will determine how your clean and properly structured your CSS will be. If your HTML code is messy, you can bet that your CSS will be messy as well. It’s never too early to learn how to write proper HTML and CSS. I recommend ISOBAR’s Frontend HTML and CSS coding standards guide. If you are using web frameworks such as React, Vue or Angular, always stick to creating simple, single-responsible components with scoped CSS. Think of components as lego blocks that will be used to build larger features or modules. 4. Study and code a lot You can only get better by studing about programming, reading and writing code. Look for Javascript libraries and open-sourced projects on sites like Github to glean useful information on how to write clean and efficient code. Conclusion and final thoughts I highly recommend referring to the Mdn web docs to build your knowlegde of web development and clear any doubts you might have regarding CSS, HTML and Javascript. Becoming a skilled frontend developer takes time and effort, but with the right education, resources, tools and, most importantly, determination, you’ll definitely get there. Goodluck on your journey!</summary></entry><entry><title type="html">Design tokens with Theo</title><link href="/2019/09/26/theo.html" rel="alternate" type="text/html" title="Design tokens with Theo" /><published>2019-09-26T00:00:00+02:00</published><updated>2019-09-26T00:00:00+02:00</updated><id>/2019/09/26/theo</id><content type="html" xml:base="/2019/09/26/theo.html">&lt;p&gt;In my never ending quest in finding the right CSS structure that will allow easy theming, I have done a lot of reading and research into design tokens and how this will help me achieve my aim of writing CSS that can easily be overriden with little effort.&lt;/p&gt;
 
 &lt;p&gt;In short, design tokens are used to avoid hardcoded values that are reusable in your CSS. Design tokens are used to store variables such as typography, spacing and colours that will be shared across plaforms like web, iOS and Android. It’s a very similar concept with CSS variables, which contains values that are reused throughout a document. (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)&lt;/p&gt;
 
@@ -6,7 +75,7 @@
 
 &lt;p&gt;Below is a very simple JSON design token file (raw.json):&lt;/p&gt;
 
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;global&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;font&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
         &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;font&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -53,28 +122,28 @@
             &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;font-weight&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
         &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;I can then choose to output this raw values as SASS variables&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;theo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;raw.json&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;scss&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;// save &lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`Something went wrong: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;theo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;raw.json&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;scss&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// save
+&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`Something went wrong: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The output:&lt;/p&gt;
 
-&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$font-size-x-small&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$font-weight-bolder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;700&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$font-size-large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;22px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -83,20 +152,25 @@
 &lt;span class=&quot;nv&quot;&gt;$font-size-small&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;11px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$font-weight-bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$font-weight-normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$font-weight-light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;nv&quot;&gt;$font-weight-light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Below is a very simple YAML design token file:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;props:
-  black:
-    value: '#000'
-  white:
-    value: '#fff'
-global:
-  type: colors
-  category: colors
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;span class=&quot;na&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#000'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#fff'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;colors&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;colors&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Isn’t it just neat? It just works and your design tokens can easily be are sorted into categories. For smaller applications and personal projects, it’s a no brainer that Theo is a perfect soluton. I have yet to use Theo in a large-scale but I am confident that it would work just as well.&lt;/p&gt;
 
@@ -107,7 +181,7 @@ global:
   &lt;li&gt;&lt;a href=&quot;https://github.com/salesforce-ux/theo-example&quot;&gt;Theo Github&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/what-are-design-tokens/&quot;&gt;What Are Design Tokens?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421&quot;&gt;Tokens in Design Systems&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>thesimplearchitecture</name></author><summary type="html">In my never ending quest in finding the right CSS structure that will allow easy theming, I have done a lot of reading and research into design tokens and how this will help me achieve my aim of writing CSS that can easily be overriden with little effort. In short, design tokens are used to avoid hardcoded values that are reusable in your CSS. Design tokens are used to store variables such as typography, spacing and colours that will be shared across plaforms like web, iOS and Android. It’s a very similar concept with CSS variables, which contains values that are reused throughout a document. (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) It was during a discussion I had with a coworker abour CSS refactoring and design tokens that I discovered the existence of Theo. Theo is a tool developed by Salesforce that helps you automate the generation of your design tokens. Theo consumes JSON or YAML design token files and transforms the configured values into the format that best suits your needs. Below is a very simple JSON design token file (raw.json): { &quot;global&quot;: { &quot;type&quot;: &quot;font&quot;, &quot;category&quot;: &quot;font&quot; }, &quot;props&quot;: { &quot;font-family&quot;: { &quot;value&quot;: &quot;Arial, sans-serif&quot;, &quot;category&quot;: &quot;font&quot; }, &quot;font-size-x-small&quot;: { &quot;value&quot;: &quot;10px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-small&quot;: { &quot;value&quot;: &quot;11px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-normal&quot;: { &quot;value&quot;: &quot;13px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-large&quot;: { &quot;value&quot;: &quot;22px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-x-large&quot;: { &quot;value&quot;: &quot;24px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-weight-light&quot;: { &quot;value&quot;: &quot;200&quot;, &quot;category&quot;: &quot;font-weight&quot; }, &quot;font-weight-normal&quot;: { &quot;value&quot;: &quot;400&quot;, &quot;category&quot;: &quot;font-weight&quot; }, &quot;font-weight-bold&quot;: { &quot;value&quot;: &quot;600&quot;, &quot;category&quot;: &quot;font-weight&quot; }, &quot;font-weight-bolder&quot;: { &quot;value&quot;: &quot;700&quot;, &quot;category&quot;: &quot;font-weight&quot; } } I can then choose to output this raw values as SASS variables theo.convert({ transform: { type: &quot;web&quot;, file: &quot;raw.json&quot; }, format: { type: &quot;scss&quot; } }) .then(scss =&amp;gt; { // save }) .catch(error =&amp;gt; console.log(`Something went wrong: ${error}`)); The output: $font-family: Arial, sans-serif; $font-size-x-small: 10px; $font-weight-bolder: 700; $font-size-large: 22px; $font-size-normal: 13px; $font-size-x-large: 24px; $font-size-small: 11px; $font-weight-bold: 600; $font-weight-normal: 400; $font-weight-light: 100; Below is a very simple YAML design token file: props: black: value: '#000' white: value: '#fff' global: type: colors category: colors Isn’t it just neat? It just works and your design tokens can easily be are sorted into categories. For smaller applications and personal projects, it’s a no brainer that Theo is a perfect soluton. I have yet to use Theo in a large-scale but I am confident that it would work just as well. If your still doubtful, Why not give Theo a shot and see how you like it 😁 Recommended readings Theo Github What Are Design Tokens? Tokens in Design Systems</summary></entry><entry><title type="html">I started blogging…</title><link href="http://localhost:4000/2019/07/17/first-post.html" rel="alternate" type="text/html" title="I started blogging..." /><published>2019-07-17T00:00:00+02:00</published><updated>2019-07-17T00:00:00+02:00</updated><id>http://localhost:4000/2019/07/17/first-post</id><content type="html" xml:base="http://localhost:4000/2019/07/17/first-post.html">&lt;p&gt;This is my second attempt at writing a tech blog. I’m hoping I stick with it this time 🤞.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>thesimplearchitecture</name></author><summary type="html">In my never ending quest in finding the right CSS structure that will allow easy theming, I have done a lot of reading and research into design tokens and how this will help me achieve my aim of writing CSS that can easily be overriden with little effort. In short, design tokens are used to avoid hardcoded values that are reusable in your CSS. Design tokens are used to store variables such as typography, spacing and colours that will be shared across plaforms like web, iOS and Android. It’s a very similar concept with CSS variables, which contains values that are reused throughout a document. (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) It was during a discussion I had with a coworker abour CSS refactoring and design tokens that I discovered the existence of Theo. Theo is a tool developed by Salesforce that helps you automate the generation of your design tokens. Theo consumes JSON or YAML design token files and transforms the configured values into the format that best suits your needs. Below is a very simple JSON design token file (raw.json): { &quot;global&quot;: { &quot;type&quot;: &quot;font&quot;, &quot;category&quot;: &quot;font&quot; }, &quot;props&quot;: { &quot;font-family&quot;: { &quot;value&quot;: &quot;Arial, sans-serif&quot;, &quot;category&quot;: &quot;font&quot; }, &quot;font-size-x-small&quot;: { &quot;value&quot;: &quot;10px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-small&quot;: { &quot;value&quot;: &quot;11px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-normal&quot;: { &quot;value&quot;: &quot;13px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-large&quot;: { &quot;value&quot;: &quot;22px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-size-x-large&quot;: { &quot;value&quot;: &quot;24px&quot;, &quot;category&quot;: &quot;font-size&quot; }, &quot;font-weight-light&quot;: { &quot;value&quot;: &quot;200&quot;, &quot;category&quot;: &quot;font-weight&quot; }, &quot;font-weight-normal&quot;: { &quot;value&quot;: &quot;400&quot;, &quot;category&quot;: &quot;font-weight&quot; }, &quot;font-weight-bold&quot;: { &quot;value&quot;: &quot;600&quot;, &quot;category&quot;: &quot;font-weight&quot; }, &quot;font-weight-bolder&quot;: { &quot;value&quot;: &quot;700&quot;, &quot;category&quot;: &quot;font-weight&quot; } } } I can then choose to output this raw values as SASS variables theo.convert({ transform: { type: &quot;web&quot;, file: &quot;raw.json&quot; }, format: { type: &quot;scss&quot; } }) .then(scss =&amp;gt; { // save }) .catch(error =&amp;gt; console.log(`Something went wrong: ${error}`)); The output: $font-family: Arial, sans-serif; $font-size-x-small: 10px; $font-weight-bolder: 700; $font-size-large: 22px; $font-size-normal: 13px; $font-size-x-large: 24px; $font-size-small: 11px; $font-weight-bold: 600; $font-weight-normal: 400; $font-weight-light: 100; Below is a very simple YAML design token file: props: black: value: '#000' white: value: '#fff' global: type: colors category: colors Isn’t it just neat? It just works and your design tokens can easily be are sorted into categories. For smaller applications and personal projects, it’s a no brainer that Theo is a perfect soluton. I have yet to use Theo in a large-scale but I am confident that it would work just as well. If your still doubtful, Why not give Theo a shot and see how you like it 😁 Recommended readings Theo Github What Are Design Tokens? Tokens in Design Systems</summary></entry><entry><title type="html">I started blogging…again!</title><link href="/2019/07/17/first-post.html" rel="alternate" type="text/html" title="I started blogging...again!" /><published>2019-07-17T00:00:00+02:00</published><updated>2019-07-17T00:00:00+02:00</updated><id>/2019/07/17/first-post</id><content type="html" xml:base="/2019/07/17/first-post.html">&lt;p&gt;This is my second attempt at writing a tech blog. I’m hoping I stick with it this time 🤞.&lt;/p&gt;
 
 &lt;p&gt;I’ve been trying to find the right flat-file CMS that requires minimum time to set up and I discovered Jekyll. After about 4 hours, I have a blog hosted on github pages.&lt;/p&gt;
 

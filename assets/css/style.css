@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 @import url(native.css);
+body {
+  color: #444; }
+
 .active {
   color: green; }
 
@@ -8,3 +11,6 @@ figure.highlight {
   border: 1px solid #b0cadb;
   padding: 0 10px;
   border-radius: 5px; }
+
+.pure-g [class*=pure-u] {
+  font-family: 'Open Sans', Georgia, "Cambria", sans-serif; }

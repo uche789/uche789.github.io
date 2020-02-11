@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tech blog focusing on frontend development and web security">
+  <title>The Simple Architect</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+    crossorigin="anonymous">
+
+  <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+
+  <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!--<![endif]-->
+</head>
+
+<body>
+
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <div class="header">
+          <h1 class="brand-title">The Simple Architect</h1>
+          <h2 class="brand-tagline">Code is my life...and the seaside.</h2>
+
+        <nav class="nav">
+  <ul class="nav-list">
+      
+      <li class="nav-item">
+        <a href="/" class="pure-button ">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/about.html" class="pure-button ">About</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="https://github.com/uche789" class="pure-button ">Github</a>
+      </li>
+    
+  </ul>
+</nav>
+      </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <h2 class="post-title">How to add JavaScript to a page</h2>
+<p class="post-meta">11 Feb 2020 - thesimplearchitect</p>
+
+
+
+
+<p>How and where you load external scripts on a page can affect page load speed and performance. <code class="highlighter-rouge">&lt;script&gt;</code> tags were usually placed in the <code class="highlighter-rouge">&lt;head&gt;</code> section and quite often without only the <code class="highlighter-rouge">src</code> attributes. These external Scripts are loaded and executed synchronously, meaning the HTML parser is forced to wait for the resource to be fetched. 
+If there is an issue with the server response, this could result in page blocking and a terrible user experience. In order to avoid this, it is recommended to defer javascript loading and execution until the page is rendered.</p>
+
+<p>One common solution is to place the <code class="highlighter-rouge">&lt;script&gt;</code> tag at the end of the <code class="highlighter-rouge">&lt;body&gt;</code> tag to ensure that the DOM is loaded first before executing any javascript. However, there are other equally good solutions.</p>
+
+<h2 id="aysnc-and-defer-attributes">aysnc and defer attributes</h2>
+
+<p>The <code class="highlighter-rouge">&lt;script&gt;</code> tags are placed in the <code class="highlighter-rouge">&lt;head&gt;</code> section with attributes <code class="highlighter-rouge">async</code> or <code class="highlighter-rouge">defer</code>. These atrributes tell the browser how to fetch and execute external scripts.</p>
+
+<p>The <code class="highlighter-rouge">defer</code> attribute tells the browser to load the script but not execute any Javacript until the DOM is ready (the document has been fully parsed and before the <code class="highlighter-rouge">DOMContentLoaded</code> event is fired).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://"</span> <span class="na">defer</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">async</code> attribute tells the browser to execute the external script asychronously. The HTML parser can continue parsing the page without
+waiting for the script to be executed.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://"</span> <span class="na">async</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p><small>Check <a href="https://caniuse.com" rel="noopenner noreferrer" target="_blank">caniuse.com</a> for browser compatibility of <a href="https://caniuse.com/#search=async" rel="noopenner noreferrer" target="_blank">async</a> and <a href="https://caniuse.com/#search=defer" rel="noopenner noreferrer" target="_blank">defer</a> attributes.</small></p>
+
+<h2 id="dynamic-insert">Dynamic insert</h2>
+
+<p>There are some cases where you only want to load a script in certain situations. This is known as <strong>on-demand loading</strong> to avoid unnecessary requests.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">insertScript</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">var</span> <span class="nx">scriptInDoc</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+  <span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">script</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://....</span><span class="dl">'</span><span class="p">;</span>
+  <span class="nx">script</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="nx">id</span><span class="p">;</span>
+  <span class="nx">script</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">callback</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="nx">scriptInDoc</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">script</span><span class="p">,</span> <span class="nx">scriptInDoc</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Always incorporate JavaScript asynchronously and only load external scripts at the point when they are needed to avoid extra network requests.</p>
+
+    </div>
+  </div>
+
+</body>
+</html>

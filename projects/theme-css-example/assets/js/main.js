@@ -17,12 +17,12 @@ $(function () {
         $('<link>')
             .appendTo('head')
             .attr({ type: 'text/css', rel: 'stylesheet', id: theme + '-var' })
-            .attr('href', '/assets/css/' + theme + '-variables.css');
+            .attr('href', 'assets/css/' + theme + '-variables.css');
 
         $('<link>')
             .appendTo('head')
             .attr({ type: 'text/css', rel: 'stylesheet', id: theme + '-css' })
-            .attr('href', '/assets/css/' + theme + '.css');
+            .attr('href', 'assets/css/' + theme + '.css');
     }
 });
 

@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+header {
+    background-color: var(--header-bgcolor);
+    color: var(--header-text-color);
+    padding: 10px;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: var(--a-text-decoration);
+    color: var(--a-color);
+    font-weight: var(--a-font-weight);
+}
+
+.tab {
+    margin-left: 20px;
+}
+
+a:hover {
+    text-decoration: var(--a-hover-text-decoration);
+    color: var(--a-hover-color);
+}
+
+.content {
+    background-color: white;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 100%;
+    }
+}
+
+select {
+    height: 30px;
+    min-width: 100px;
+    font-family: var(--font-family);
+    border: var(--select-border);
+    color: var(--select-color);
+}
+
+.btn {
+    font-family: var(--font-family);
+    border-radius: var(--button-border-radius);
+    color: var(--button-text-color);
+    background-color: var(--button-bgcolor);
+    padding: 5px;
+    border: 1px solid;
+    outline: 0;
+    border-color: var(--button-border-color);
+    min-width: 100px;
+    min-height: 40px;
+}
+
+.btn:focus {
+    outline:0;
+}
+
+.btn-primary {
+    color: var(--button-primary-text-color);
+    background-color: var(--button-primary-bgcolor);
+    border-color: var(--button-primary-border-color);
+
+}
+.btn-primary:hover {
+    background-color: var(--button-primary-focus-bgcolor);
+    border-color: var(--button-primary-focus-border-color);
+}
+
+.btn-secondary {
+    color: var(--button-secondary-text-color);
+    background-color: var(--button-secondary-bgcolor);
+    border-color: var(--button-secondary-border-color);
+}
+.btn-secondary:hover {
+    background-color: var(--button-secondary-focus-bgcolor);
+    border-color: var(--button-secondary-focus-border-color);
+}
+
+.btn:disabled {
+    background-color: var(--button-disabled-bgcolor);
+    color: var(--button-disabled-text-color);
+    border-color: var(--button-disabled-border-color);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}

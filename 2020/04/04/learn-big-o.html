@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tech blog focusing on frontend development and web security">
+  <title>The Simple Architect</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+    crossorigin="anonymous">
+
+  <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+
+  <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!--<![endif]-->
+</head>
+
+<body>
+
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <div class="header">
+          <h1 class="brand-title">The Simple Architect</h1>
+          <h2 class="brand-tagline">Code is my life...and the seaside.</h2>
+
+        <nav class="nav">
+  <ul class="nav-list">
+      
+      <li class="nav-item">
+        <a href="/" class="pure-button ">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/about.html" class="pure-button ">About</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="https://github.com/uche789" class="pure-button ">Github</a>
+      </li>
+    
+  </ul>
+</nav>
+      </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <h2 class="post-title">Learning Big O notation as a Javascript developer</h2>
+<p class="post-meta">04 Apr 2020 - thesimplearchitect</p>
+
+
+
+
+<p>We all know that while there are multiple solutions to a given problem, some solutions are better than others and could have a significant impact on the performance of your software. It’s easy to overlook perfomance as long as the desired functionality is achieved and in a lot of small to mid-scale projects, performance can be negligible. However when building large-scale applications or software that processes large amounts of data, the code handling the processing should be efficient and performant.</p>
+
+<p>This is why Big O notation is necessary.</p>
+
+<p>Big O notation is a mathematical notation that denotes the efficiency of an algorithm and specifically takes into account the worst-case scenario. Big-O consists of time and space complexity.</p>
+
+<p><strong>Time complexity</strong> describes the execution time of an algorithm and <strong>Space complexity</strong> describes the space it requires.</p>
+
+<p>Big O notations is grouped together with data structures as a means to organize, manage, and store data in a format that enables efficient access and modification. Data structures are used in almost every program or software system and very common examples include arrays, linked lists and graphs. For example, the DOM (Document Object Model) of an HTML document is a <a href="https://en.wikipedia.org/wiki/Tree_(data_structure)">tree structure</a> consisting of nodes.</p>
+
+<p>Have you ever wondered what are the time and space complexity of javascript native functions such as <code>indexOf</code>, <code>find</code> and <code class="highlighter-rouge">includes</code> and how to use them efficiently?</p>
+
+<p>Although javascript built-in functions are quite perfomant and should definitely be used in place of custom solutions, they can yield terrible performance if not used correctly. For example using <code class="highlighter-rouge">indexOf</code> inside a <code class="highlighter-rouge">for</code> loop has a time complexity of o(n^2) which is very inefficient with large sets of data.</p>
+
+<p>It takes time to understand and consciously incorporate Big O notation as part of your regular development process. However here are a few tips to help you get started:</p>
+<ul>
+  <li><strong>Avoid nested loops:</strong> nested loops can a negative impact on the perfomance of your code when working with large data sets. It’s better to with work with multiple <code class="highlighter-rouge">for</code> loops that are not nested as the time complexity will always be o(kn) = o(n), where k is the number of loops.</li>
+  <li><strong>Use Built-in functions:</strong> it is always safe to use built-in functions such as <code class="highlighter-rouge">map</code>, <code class="highlighter-rouge">filter</code>, <code class="highlighter-rouge">reduce</code>, <code class="highlighter-rouge">find</code>, <code class="highlighter-rouge">forEach</code> and <code class="highlighter-rouge">sort</code> as they have been optimized by the JavaScript engines that run them. Optionally, <a href="https://lodash.com/">Lodash</a> ultility library provides very useful functions for common programming tasks.</li>
+  <li><strong>Opt for object instead of array of objects:</strong> sometimes, it’s easier to work with objects instead of arrays if you can and want to associate a key or id with a data set for easy access. Using the native functions <code class="highlighter-rouge">Object.keys</code> and <code class="highlighter-rouge">Object.values</code> facilitates interating over object properties and values.</li>
+  <li><strong>Learn how to use sorting and search algorithms:</strong> I’m sure you’ve already heard about <em>binary search</em>, <em>merge sort</em> and <em>quick sort</em>. Although a lot of built-in functions and libraries use these alogirthms internally and in most cases you might not need to write a sorting algorithm, it is important to have a fundamental understanding of sorting and search algorithms in the event that you may have to work with a complex data structure.</li>
+  <li><strong>Use variables efficiently:</strong> a variable is a name of storage location. Variables should be declared only when need and ideally, as local as possible. Keep in mind that objects that are still referenced by your application are not cleaned up by the garbage collector.</li>
+  <li><strong>Use a javascript linter:</strong> javascript linters are benefical in optimizing your code and improve quality. JSLint and ESLint are two very popular lintes. There are also may good styleguide to use when configuring your linter. I always recommend the <a href="https://github.com/airbnb/javascript">airbnb styleguide</a>.</li>
+  <li><strong>Read open-source coded and practice solving problem:</strong> reading open-source code provides a wealth of information and websites such Codewars can be beneficial improve your problem-solving skills. Keep in mind you’ll only get better the more code you write.</li>
+</ul>
+
+<p>Should you consider time and space complexity all of your projects? In my opinion, the answer is <strong><em>Yes!</em></strong></p>
+
+<p>It doesn’t matter the size of your application. Understanding Big O notation, code optimization and efficient resource usage is an essential skill for all developers wanting to build scalable and performant applications with minimal effort.</p>
+
+<h2>Resources</h2>
+<ul>
+  <li><a href="https://www.bigocheatsheet.com/">Big-O Cheat Sheet</a></li>
+  <li><a href="https://adrianmejia.com/how-you-can-change-the-world-learning-data-structures-algorithms-free-online-course-tutorial/">Tutorial series: Learning Data Structures and Algorithms (DSA) for Beginners</a></li>
+  <li><a href="https://dev.to/b0nbon1/understanding-big-o-notation-with-javascript-25mc">Understanding Big-O Notation With JavaScript</a></li>
+  <li><a href="https://www.interviewcake.com/article/python/big-o-notation-time-and-space-complexity?">The idea behind big O notation</a></li>
+  <li><a href="https://www.codewars.com/">Codewars</a></li>
+  <li><a href="https://leetcode.com/">Leetcode</a></li>
+  <li><em><strong>High Performance JavaScript (Build Faster Web Application Interfaces)</strong></em> by Nicholas C. Zakas</li>
+</ul>
+
+    </div>
+  </div>
+
+</body>
+</html>

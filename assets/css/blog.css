@@ -126,7 +126,7 @@ h3 {
     .post-category-pure {
         background: #4d85d1;
     }
-    .post-category-yui {
+    .post-category-performance {
         background: #8156a7;
     }
     .post-category-education {
@@ -143,6 +143,9 @@ h3 {
     }
     .post-category-css {
         background: #5aba59;
+    }
+    .post-category-html {
+        background: #1ea6c2;
     }
 
 .post-images {

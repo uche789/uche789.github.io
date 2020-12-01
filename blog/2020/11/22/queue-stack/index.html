@@ -59,11 +59,10 @@ O(n)</li>
     <span class="token comment">// head and tail will have the same initial node</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">head</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">tail</span> <span class="token operator">=</span> node
   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token comment">// adds a node to end and move the the tail to the next node</span>
+    <span class="token comment">// adds a node to end and move the tail to the next node</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">tail</span><span class="token punctuation">.</span><span class="token property-access">next</span> <span class="token operator">=</span> node
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">tail</span> <span class="token operator">=</span> node
   <span class="token punctuation">}</span>
-  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">tail</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">head</span><span class="token punctuation">)</span>
   <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">size</span><span class="token operator">++</span>
 <span class="token punctuation">}</span>
 
@@ -156,15 +155,15 @@ O(n)</li>
 <span class="token punctuation">}</span></code></pre>
 <div class="divider"></div>
 <p>Now, you should have a good understanding of these data structures and their complexities.</p>
-</div><div class="divider" data-v-35c1dfd4></div><div class="tags"><div class="tag tag-bg1">
+</div><div class="divider" data-v-35c1dfd4></div><div class="tags"><div class="tag tag-bg2">
     javascript
-  </div><div class="tag tag-bg6">
-    complexity
   </div><div class="tag tag-bg3">
+    complexity
+  </div><div class="tag tag-bg5">
     algorithm
   </div><div class="tag tag-bg1">
     big-o-notation
-  </div><div class="tag tag-bg6">
+  </div><div class="tag tag-bg3">
     data-structures
   </div></div><div class="divider" data-v-35c1dfd4></div><div class="author"><div class="author__avatar"><img alt="Written by Uche" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 135 163' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-b6018ff55a63cedb10ea6a4e185a199e'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-b6018ff55a63cedb10ea6a4e185a199e)' width='135' height='163' xlink:href='data:image/jpeg%3bbase64%2c/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABNAEADASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAABgcDCAACBAUB/8QANxAAAQMDAgMGAQoHAAAAAAAAAQIDBAAFERIhBjFBBxMiYXGRURQjMkJSgaGxssEVFjVDdNHx/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QAIBEAAgICAgMBAQAAAAAAAAAAAAECEQMSISIEMWETQf/aAAwDAQACEQMRAD8AZ4rCQAScADnWUEdss1%2bFwHLMZSkl5xDK1J6JJ398Y%2b%2bvXXLo8irPVmcccNQ3u5evEXvNWghBK8HzIGKIoshmUwh6M4h1lYylaDkKHkapzEwXBnZKdz508uwK5SXoVwgvrKmWil5sH6pJwoDyzTp4ko2gnChtYr6KyvtT2ZqZjavoFYBW1dsdqcYIPKl3xvxvwxK4du0Jx5c1RSWCy22oePodRAGAQDny61N2r8XOcNWdtmEdM%2bXlLa8Z7tI5q9egqu2teVL5ZO5PM0zHC1bGJHTbYvfLUXCUNpAJURtzA/erHdldpZtthVIaWHDKVqB0gYSNgNuh5%2b1V2tckia2VlWnIzvsfup2dnlzet13ZtrqMW64ZVHUn6KHRuU%2bWR08vWmZbapBJ31oaYVW//ai0%2bLAyTX0qwU4BOdvSpLO1JAdq3yKhSrYZrcGss7UUPbSyxcOFWpqWlLXEkoaDw5DUDn1G1IwJypWeQq1vbFAvNz4TVAtdutqYK8KeWk/O5TuAkAfH86qo4C2kBQwok5Hpt/unYJ7RDargltqkImIccAUlB1afjjkPemXDuLne2PuiS4h1qTkdColJ9xmla2CXAEfSUcCj7h9SZF4krSQWYwYZQDyOg4P709cyQKXdFiW5bLb57xYCVBJydscyPwqFy5Q23GwXkIJ8W5AB5V50lUty8MJetkYwgxHDSSrJIxuoq67YGDQxxHcOIG7%2bppiwwm46HVqbworBI5IOMbbfgKgj2Ycuocu3KMhkOF5CgnAOkhW/QYFRovERRwlwk8saTn2oAn2yWiE1IhRmm3VPkvpJyoncA59/U79BXuQLS5Isdv1LEd5suoUUJySkhOOf30apipSf8COROLsRbRV0FVc44%2bS/zTcPkQ0s959HolX1gPQ5p9cS3IW2wTZWQShs4HxPSq1uOKeccdcJK1qJUT1NNxx1MhJy5NWlFtYUnmNwaMeCS20FpdkttmTpCUlQ6HIJz5j2oMVgda64ct6MsadBJwBrGfSmsY/ha6Nc40xEdbL7bmlpCNjuCOmKkfV3r3eEZOSark3xJOgRnI6W1NyFHBdSs7DOfzr0Y/GXEM1LcKPNnFtayXVElR045BXMDnSPxYG9rkey2iob50fZ07Z%2bNSteFtKB0ycUF8F8Su2xlSpTz85S1ZPfJSoAb7AEnHTljlRK/wAZNTdCHIi8J3ASlCce1Coyv0BKUF6kJbtRvkl24u21DykxW0p1NjGFK5nNBFljty7rDjv57t15KFYODgnFGXajBjMPx5TLeh6StRdOThRAHShHh7%2bu23/Jb/UKpfw3A1LHaD9m3WljwptMZRGxKtRJ9zXpsuwNadVmgrITgFSAcY5cwa5Xxl4mpWU%2bMelBBbeyWc5RfsL%2bG/4fcZC0SLNBQgEDUGkqOT6ppk27g6zrQNMSOkK%2bwwgftS14FQHJL4PTBFO6zD5kVN5DcZUmV%2bLU4XI42OBLCEYVBQRjkAEj8AKT8iKhu5vNoSAhDikgeQJqxbQ8FIKeALvK2/vL/UaDDNtuzfJgqVH/2Q==' /%3e%3c/svg%3e" width="135" data-src="/assets/static/profile-pic.9dd3765.8fcf2a837be2cd935131ce9036c3b119.jpg" data-srcset="/assets/static/profile-pic.9dd3765.8fcf2a837be2cd935131ce9036c3b119.jpg 135w" data-sizes="(max-width: 135px) 100vw, 135px" class="g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/profile-pic.9dd3765.8fcf2a837be2cd935131ce9036c3b119.jpg" class="g-image g-image--loaded" width="135" alt="Written by Uche"></noscript></div><div class="author__content"><div class="author__name">Written by Uche</div>
    Frontend developer searching for the sophistication in simplicity.

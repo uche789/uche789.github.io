@@ -115,7 +115,7 @@ const calendarYear = Vue.defineComponent({
     }
   },
   template: `
-    <section class="calendar-year">
+    <div class="calendar-year">
       <calendar-month 
         v-for="monthIndex in 12"
         :key="monthIndex"
@@ -125,6 +125,6 @@ const calendarYear = Vue.defineComponent({
         :selected-date="selectedDate"
         @selectDate="selectDate"
       />
-    </section>
+    </div>
   `
 });

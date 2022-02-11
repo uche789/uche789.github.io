@@ -40,13 +40,20 @@ select {
 }
 
 .github {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  margin-top: 1rem;
 }
 
 .github img {
-  width: 10rem;
+  width: 7rem;
+}
+
+.github__caption {
+  display: inline-block;
+  background-color: #3e4553;
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 nav {
@@ -54,6 +61,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #87ceeb;
+  max-width: 120rem;
+  margin: auto;
 }
 
 .nav {
@@ -83,25 +92,35 @@ main {
 .calendars {
   display: flex;
   justify-content: space-between;
+  max-width: 120rem;
+  margin: auto;
 }
 
 .calendar-section {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
+  max-width: 95.6rem;
 }
 
-.calendar-section:first-child {
-  margin-right: 1.5rem;
+.calendar-section:first-child:not(:empty) {
+  margin-right: 1rem;
 }
 
-.calendar-section:last-child {
-  margin-left: 1.5rem;
+.calendar-section:first-child:empty {
+  width: 0;
+  padding: 0;
+}
+
+.calendar-section:first-child > .calendar-month {
+  background-color: #3e4553;
+  padding: 1rem;
 }
 
 .calendar-year {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
   flex: 1;
 }
 
@@ -110,7 +129,7 @@ main {
 }
 
 .calendar-month {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .calendar-month__controls {
@@ -151,6 +170,14 @@ main {
 .cell {
   display: table-cell;
   padding: 0.7rem;
+  text-align: center;
+  cursor: default;
+}
+
+@media screen and (max-width: 600px) {
+  .cell {
+    padding: 1rem;
+  }
 }
 
 .cell--next,

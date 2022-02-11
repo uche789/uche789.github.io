@@ -9,8 +9,20 @@ Vue.createApp({
     calendarYear: null,
     selectedDate: '',
     viewMode: '',
+    mobile: false,
 
   }),
+  beforeMount() {
+    const mq = window.matchMedia('(max-width: 750px)');
+    this.mobile = mq.matches ? true : false;
+    mq.onchange = (e) => {
+      if (e.matches) {
+        this.mobile = true;
+      } else {
+        this.mobile = false;
+      }
+    };
+  },
   mounted() {
     this.selectedDate = new Date();
     ClndrBits.calendar.init({
@@ -64,16 +76,17 @@ Vue.createApp({
         :month="calendarMonth && calendarMonth.date.currentMonth.name"
       />
       <article class="calendars">
-        <calendar-month
-          v-if="calendarMonth"
-          :month="calendarMonth.date.currentMonth.name"
-          :data="calendarMonth.calendarValues"
-          class="calendar-section"
-          :selected-date="formatSelectDate"
-          @selectDate="selectDate"
-          @prevMonth="getPrevMonth"
-          @nextMonth="getNextMonth"
-        />
+        <div class="calendar-section">
+          <calendar-month
+            v-if="!mobile && calendarMonth"
+            :month="calendarMonth.date.currentMonth.name"
+            :data="calendarMonth.calendarValues"
+            :selected-date="formatSelectDate"
+            @selectDate="selectDate"
+            @prevMonth="getPrevMonth"
+            @nextMonth="getNextMonth"
+          />
+        </div>
         <calendar-year 
           v-if="calendarYear"
           :data="calendarYear"

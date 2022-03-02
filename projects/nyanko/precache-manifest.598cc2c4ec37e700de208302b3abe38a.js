@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/nyanko/css/Archive.3b432ce6.css"
   },
   {
-    "revision": "ab7b330dc2daea01f1e8",
-    "url": "/projects/nyanko/css/app.fffb1456.css"
+    "revision": "df71f20feb1db5133961",
+    "url": "/projects/nyanko/css/app.3fff141d.css"
   },
   {
     "revision": "977fa20a898aa1fad6ba",
@@ -68,7 +68,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/nyanko/img/minus_white.5f4f45c5.svg"
   },
   {
-    "revision": "a1d1400ad14103c05013dbcfca8ff981",
+    "revision": "a315eb343e2f983220b45ac5d456a6b9",
     "url": "/projects/nyanko/index.html"
   },
   {
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/nyanko/js/Archive.8cf33c32.js"
   },
   {
-    "revision": "ab7b330dc2daea01f1e8",
-    "url": "/projects/nyanko/js/app.5e3461ac.js"
+    "revision": "df71f20feb1db5133961",
+    "url": "/projects/nyanko/js/app.03300593.js"
   },
   {
     "revision": "24410c97c50340993738",

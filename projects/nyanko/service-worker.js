@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/projects/nyanko/precache-manifest.fd6e516121f1e46a47330b56dfe4d408.js"
+  "/projects/nyanko/precache-manifest.a48591b30aa72691cd68392f4329fa03.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "next-neko-chan"});

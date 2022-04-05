@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7225f0ea5bf7f1c33ab",
-    "url": "/projects/nyanko/css/Archive.3b432ce6.css"
+    "revision": "72ab8fdc7c043d7025f5",
+    "url": "/projects/nyanko/css/Archive.3631b2d7.css"
   },
   {
-    "revision": "e76b404fc87624a14d22",
-    "url": "/projects/nyanko/css/app.8906912e.css"
+    "revision": "18704af20155a996161e",
+    "url": "/projects/nyanko/css/app.140ca656.css"
   },
   {
     "revision": "4027bff428a27011423b",
@@ -72,16 +72,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/nyanko/img/star.55e0648f.svg"
   },
   {
-    "revision": "3b0d16abceb4b8b700dbf8a9b9aff3f6",
+    "revision": "de9c12a27edb88770036bc53ae215162",
     "url": "/projects/nyanko/index.html"
   },
   {
-    "revision": "b7225f0ea5bf7f1c33ab",
-    "url": "/projects/nyanko/js/Archive.689fc456.js"
+    "revision": "72ab8fdc7c043d7025f5",
+    "url": "/projects/nyanko/js/Archive.d855159b.js"
   },
   {
-    "revision": "e76b404fc87624a14d22",
-    "url": "/projects/nyanko/js/app.fc749685.js"
+    "revision": "18704af20155a996161e",
+    "url": "/projects/nyanko/js/app.ba10b32b.js"
   },
   {
     "revision": "4027bff428a27011423b",

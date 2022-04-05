@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38b0d4939f7ea0b8e2ce",
+    "revision": "b7225f0ea5bf7f1c33ab",
     "url": "/projects/nyanko/css/Archive.3b432ce6.css"
   },
   {
-    "revision": "ff9d4150d9d01477e1ec",
-    "url": "/projects/nyanko/css/app.c18073d2.css"
+    "revision": "5b101c8496a24c58e91f",
+    "url": "/projects/nyanko/css/app.8906912e.css"
   },
   {
-    "revision": "7f597ecbe1bfe0ed89eb",
-    "url": "/projects/nyanko/css/chunk-5ca7e063.a0851eea.css"
+    "revision": "4027bff428a27011423b",
+    "url": "/projects/nyanko/css/chunk-2a398160.10b30aba.css"
   },
   {
-    "revision": "c004d1bbf8d0756803c2",
-    "url": "/projects/nyanko/css/chunk-7949c373.e7ebd912.css"
+    "revision": "addc125d06abf2129a7c",
+    "url": "/projects/nyanko/css/chunk-611c97bc.e7ebd912.css"
   },
   {
     "revision": "0c6a1f6fc7ebd434d37f",
@@ -72,36 +72,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/nyanko/img/star.55e0648f.svg"
   },
   {
-    "revision": "ba18adba02655b24efc1be9ae0f287d2",
+    "revision": "07f8a960581af09be16693d0a1b3a9a5",
     "url": "/projects/nyanko/index.html"
   },
   {
-    "revision": "38b0d4939f7ea0b8e2ce",
-    "url": "/projects/nyanko/js/Archive.49d50abd.js"
+    "revision": "b7225f0ea5bf7f1c33ab",
+    "url": "/projects/nyanko/js/Archive.689fc456.js"
   },
   {
-    "revision": "ff9d4150d9d01477e1ec",
-    "url": "/projects/nyanko/js/app.5a09dafb.js"
+    "revision": "5b101c8496a24c58e91f",
+    "url": "/projects/nyanko/js/app.29b61fe8.js"
+  },
+  {
+    "revision": "4027bff428a27011423b",
+    "url": "/projects/nyanko/js/chunk-2a398160.0a27cfc1.js"
   },
   {
     "revision": "24410c97c50340993738",
     "url": "/projects/nyanko/js/chunk-2d0f02df.fe721459.js"
   },
   {
-    "revision": "7f597ecbe1bfe0ed89eb",
-    "url": "/projects/nyanko/js/chunk-5ca7e063.3cc6023f.js"
-  },
-  {
-    "revision": "c004d1bbf8d0756803c2",
-    "url": "/projects/nyanko/js/chunk-7949c373.4c5f5d47.js"
+    "revision": "addc125d06abf2129a7c",
+    "url": "/projects/nyanko/js/chunk-611c97bc.5052acb1.js"
   },
   {
     "revision": "0c6a1f6fc7ebd434d37f",
     "url": "/projects/nyanko/js/chunk-e33e5994.0943f23f.js"
   },
   {
-    "revision": "54f204e532bff06df876",
-    "url": "/projects/nyanko/js/chunk-vendors.69ea2d60.js"
+    "revision": "1ebbb940bb3b47cb593a",
+    "url": "/projects/nyanko/js/chunk-vendors.4d722f81.js"
   },
   {
     "revision": "e1e25816f39f7bd9601f82f42d601809",

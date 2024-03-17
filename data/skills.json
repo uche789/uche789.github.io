@@ -1,0 +1,134 @@
+{
+  "skills": {
+    "current": [
+      "Vue",
+      "React",
+      "Cypress",
+      "Jest",
+      "Vitest",
+      "PHP",
+      "Node Express",
+      "Typescript",
+      "SCSS / CSS3",
+      "HTML",
+      "Figma",
+      "Relational Databases",
+      "Scrum",
+      "Agile",
+      "Project management"
+    ],
+    "prior": [
+      "ASP.NET",
+      "C#",
+      "Java",
+      "Azure Cloud",
+      "Nightwatch"
+    ],
+    "languages": [
+      "English (Native)",
+      "French (Proficient)",
+      "German (B2 Intermediate)",
+      "Japanese (N3 Intermediate)"
+    ]
+  },
+  "learning": [
+    {
+      "label": "Symfony",
+      "level": 1
+    },
+    {
+      "label": "PWA",
+      "level": 4
+    },
+    {
+      "label": "Next.JS",
+      "level": 3
+    },
+    {
+      "label": "Postgres",
+      "level": 1
+    },
+    {
+      "label": "Docker / Kubenetes",
+      "level": 1
+    }
+  ],
+  "goodies": {
+    "books": [
+      {
+        "name": "Refactoring",
+        "author": "Martin Folwer",
+        "description": ""
+      },
+      {
+        "name": "Clean Code",
+        "author": "Robert Cecil Martin",
+        "description": ""
+      },
+      {
+        "name": "Radical Candor",
+        "author": "Kim Scott",
+        "description": ""
+      }
+    ],
+    "podcasts": [
+      {
+        "name": "SE Radio",
+        "link": "https://se-radio.net/",
+        "description": "Weekly podcast by IEEE Computer Society and IEEE Software magazine covering various topics about software engineering."
+      },
+      {
+        "name": "Frontend Happy Hour",
+        "link": "https://www.frontendhappyhour.com/",
+        "description": "A podcast on software engineering showcasing a panel of professionals from Netflix, Twitch, and Atlassian engaging in relaxed conversations over beverages, covering topics such as frontend development, JavaScript, and career growth."
+      },
+      {
+        "name": "Manager's tools",
+        "link": "https://www.manager-tools.com/all-podcasts",
+        "description": "Manager Tools podcasts cater to managers and directors, while Career Tools offers beneficial insights for individuals at any stage of their career journey."
+      }
+    ],
+    "sites": [
+      {
+        "name": "CSS Tricks",
+        "link": "https://css-tricks.com/",
+        "description": "One of the resource for tips, tricks, and techniques on using Cascading Style Sheets."
+      },
+      {
+        "name": "MDN Web Docs",
+        "link": "https://developer.mozilla.org/en-US/",
+        "description": "The MDN Web Docs website offers details on Open Web technologies such as HTML, CSS, and APIs, applicable to both websites and progressive web applications (PWAs)."
+      },
+      {
+        "name": "Dev.to",
+        "link": "https://dev.to/",
+        "description": "A community for coders share, stay up-to-date and grow their careers."
+      },
+      {
+        "name": "Web.dev",
+        "link": "https://web.dev/",
+        "description": "The content on Web.dev is authored by members of the Chrome team and external experts. It aims to assist you in building visually appealing, user-friendly, and secure websites that function seamlessly across different browsers."
+      },
+      {
+        "name": "Leaddev",
+        "link": "https://leaddev.com/",
+        "description": "Gain valuable insights into effective engineering management and leadership through comprehensive articles, events, and workshops."
+      },
+      {
+        "name": "Martin Fowler",
+        "link": "https://martinfowler.com/",
+        "description": "Author of the famous book \"Refactoring\", Martin Fowler's website has numerous articles on building software effectively."
+      },
+      {
+        "name": "Troy Hunt",
+        "link": "https://www.troyhunt.com/",
+        "description": "Creator of the websites Have I Been Pwned?, Troy hunt is an international speaker on information security."
+      },
+      {
+        "name": "Coursera",
+        "link": "https://www.coursera.org/",
+        "description": "A platform that offers courses covering a wide variety of tech and non-tech topics."
+      }
+    ]
+  }
+}

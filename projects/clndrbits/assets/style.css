@@ -45,6 +45,7 @@ select {
 
 .github img {
   width: 7rem;
+  margin-bottom: 1rem;
 }
 
 .github__caption {
@@ -52,8 +53,12 @@ select {
   background-color: #3e4553;
   border-radius: .5rem;
   padding: .5rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #fff;
+
+  &:first-child {
+    margin-right: 0.5rem;
+  }
 }
 
 nav {
@@ -94,6 +99,28 @@ main {
   justify-content: space-between;
   max-width: 120rem;
   margin: auto;
+
+  &.mobile {
+    justify-content: center;
+
+    .calendar-section {
+      width: 100%;
+
+      &:first-child:not(:empty) {
+        margin-right: auto;
+      }
+    }
+
+    .table {
+      width: 100%;
+      min-height: 60.6rem;
+    }
+
+    .cell--active::after {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
 }
 
 .calendar-section {
@@ -143,6 +170,8 @@ main {
 .calendar-month__label {
   text-transform: capitalize;
   font-weight: 600;
+  text-align: center;
+  flex: 1;
 }
 
 .controls {
@@ -171,6 +200,7 @@ main {
   display: table-cell;
   padding: 0.7rem;
   text-align: center;
+  vertical-align: middle;
   cursor: default;
 }
 
@@ -201,5 +231,7 @@ main {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  margin: auto;
   z-index: -1;
 }

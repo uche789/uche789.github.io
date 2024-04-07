@@ -74,7 +74,7 @@ const calendarMonth = Vue.defineComponent({
         <div class="table">
           <div class="row">
             <div v-for="day in days" :key="day" class="cell">
-              {{day}}
+              <strong>{{day}}</strong>
             </div>
           </div>
           <div v-for="i in 6" :key="i" class="row">
@@ -121,7 +121,7 @@ const calendarYear = Vue.defineComponent({
         :key="monthIndex"
         :controls="false"
         :month="data[monthIndex-1].name"
-        :data="data[monthIndex-1].data"
+        :data="data[monthIndex-1].calendarValues"
         :selected-date="selectedDate"
         @selectDate="selectDate"
       />

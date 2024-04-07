@@ -13,7 +13,7 @@ Vue.createApp({
 
   }),
   beforeMount() {
-    const mq = window.matchMedia('(max-width: 750px)');
+    const mq = window.matchMedia('(max-width: 768px)');
     this.mobile = mq.matches ? true : false;
     mq.onchange = (e) => {
       if (e.matches) {
@@ -53,10 +53,8 @@ Vue.createApp({
     },
     getNextMonth() {
       ClndrBits.calendar.getNextMonth();
-      console.log('hhh');
     },
     getPrevMonth() {
-      console.log('sssss');
       ClndrBits.calendar.getPrevMonth();
     },
     getNextYear() {
@@ -75,10 +73,10 @@ Vue.createApp({
         :year="calendarMonth && calendarMonth.date.currentYear"
         :month="calendarMonth && calendarMonth.date.currentMonth.name"
       />
-      <article class="calendars">
+      <article class="calendars" :class="{'mobile': mobile}">
         <div class="calendar-section">
           <calendar-month
-            v-if="!mobile && calendarMonth"
+            v-if="calendarMonth"
             :month="calendarMonth.date.currentMonth.name"
             :data="calendarMonth.calendarValues"
             :selected-date="formatSelectDate"
@@ -88,7 +86,7 @@ Vue.createApp({
           />
         </div>
         <calendar-year 
-          v-if="calendarYear"
+          v-if="!mobile && calendarYear"
           :data="calendarYear"
           class="calendar-section"
           :selected-date="formatSelectDate"

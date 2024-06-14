@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as o,a as s}from"./index-uv1MocEO.js";const c={},r={xmlns:"http://www.w3.org/2000/svg",height:"24",viewBox:"0 -960 960 960",width:"24"},n=s("path",{d:"M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"},null,-1),_=[n];function a(d,h){return t(),o("svg",r,_)}const l=e(c,[["render",a]]);export{l as default};

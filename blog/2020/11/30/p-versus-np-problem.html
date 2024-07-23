@@ -9,10 +9,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css" title="highlight-dark" disabled>
     <title>Uche's Coding Corner</title>
     
-    <script type="module" crossorigin src="/assets/index-D_5qTJB_.js"></script>
+    <script type="module" crossorigin src="/assets/index-Bak_eqiH.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BATPQ6Tr.css">
   </head>
   <body>
-    <div id="app"><!--[--><header><div class="app-title"><div class="app-title__avatar"><img alt="Profile image" src="/profile-pic.jpg" width="135"></div><div class="app-title__content"><h1 class="app-title__name" role="title">Uche&#39;s Coding Corner</h1><span>Passionate about software, technology, personal discoveries, and more.</span></div></div><nav><div class="router-link__list"><!--[--><a href="/" class="">Me</a><a href="/blog" class="">Blog</a><a href="/portfolio" class="">Portfolio</a><a href="/goodies" class="">Goodies</a><!--]--></div><div class="theme-switch theme-switch--is-off" role="button" aria-label="toggle theme mode" data-v-e82f81b6><div class="theme-switch__button" data-v-e82f81b6></div><span class="theme-switch__slot bright" role="img" aria-label="light mode icon" data-v-e82f81b6><svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 -960 960 960" width="24" data-v-e82f81b6><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"></path></svg></span><!----></div></nav></header><main><!----></main><footer><span class="copyright">© 2019-present Uche&#39;s Coding Corner. All Rights Reserved.</span></footer><!--]--></div>
+    <div id="app"><!--[--><header><div class="app-title"><div class="app-title__avatar"><img alt="Profile image" src="/profile-pic.jpg" width="135"></div><div class="app-title__content"><h1 class="app-title__name" role="title">Uche&#39;s Coding Corner</h1><span>Passionate about software, technology, personal discoveries, and more.</span></div></div><nav><div class="router-link__list"><!--[--><a href="/" class="">Me</a><a href="/blog" class="">Blog</a><a href="/portfolio" class="">Portfolio</a><a href="/goodies" class="">Goodies</a><!--]--></div><div class="theme-switch theme-switch--is-off" role="button" aria-label="toggle theme mode" data-v-e82f81b6><div class="theme-switch__button" data-v-e82f81b6></div><span class="theme-switch__slot bright" role="img" aria-label="light mode icon" data-v-e82f81b6><svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 -960 960 960" width="24" data-v-e82f81b6><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"></path></svg></span><!----></div></nav></header><main><div class="blog-post"><h1>Algorithm: P versus NP problem</h1><p>Mon Nov 30 2020 🍵 <small>0 min read</small></p><div><p>Most people who are studying or studied computer science have come across the P verse NP problem. It's one of those topics that you are taught in university and will most like promptly forget about when graduation comes around and you start working in the industry. I have honestly not paid much attention to it until recently.</p>
+<p>What is P versus NP and why is it important?</p>
+<p>The P versus NP problem is an unsolved problem in computer science that tries to determine if an algorithm that can be verified in polynomial time can also be solved in polynomial time.</p>
+<p>In this post, I'll give an introduction into P, NP, NP-Hard and NP-Complete and why this is such an important problem. There will also be references to time complexity so I highly recommend reading up on it or checking out the resources I listed in my post <a href="/blog/2020/04/04/learn-big-o-notation/">Learning Big O notation as a Javascript developer</a>.</p>
+<h3>P (deterministic polynomial time)</h3>
+<p>P problems are the set of problems that have been solved and verified in polynomial time (o(n)<sup>k</sup>). Examples include linear sort, merge sort, binary search, bubble sort and insertion sort.</p>
+<p>Let's take the bubble sort example. The bubble sort algorithm goes through a sortable array of numbers and swaps the adjacent elements if they are in the wrong order.</p>
+<pre><code class="hljs language-javascript">  <span class="hljs-keyword">const</span> arr = [<span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">1</span>]
+  <span class="hljs-keyword">const</span> length = arr.<span class="hljs-property">length</span>
+  <span class="hljs-keyword">let</span> indicator = <span class="hljs-number">1</span>
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; length &#x26;&#x26; indicator == <span class="hljs-number">1</span>; i++) {
+    indicator = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &#x3C; length - i - <span class="hljs-number">1</span>; j++) {
+      <span class="hljs-keyword">if</span> (arr[j] > arr[j + <span class="hljs-number">1</span>]) {
+        <span class="hljs-keyword">const</span> temp = arr[j]
+        arr[j] = arr[j+<span class="hljs-number">1</span>]
+        arr[j+<span class="hljs-number">1</span>] = temp
+        indicator = <span class="hljs-number">1</span>
+      }
+    }
+  }
+</code></pre>
+<p>The above is a variant of the algorithm. The indicator variable will track if any of the elements have been swapped and will also indicate if the array is already sorted. The worst-case scenario is O(n<sup>2</sup>) if the array is not sorted and O(n) otherwise.</p>
+<p>Let's consider another very simple example. We want to calculate the sum of each row in a two-dimensional array and output the sum for each row in an array. We have the algorithm below to do so:</p>
+<pre><code class="hljs language-javascript">  <span class="hljs-keyword">const</span> arr = [
+    [<span class="hljs-number">2</span>, <span class="hljs-number">10</span>, <span class="hljs-number">6</span>],
+    [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">9</span>],
+    [<span class="hljs-number">13</span>, <span class="hljs-number">8</span>, <span class="hljs-number">6</span>],
+  ]
+  <span class="hljs-keyword">const</span> result = []
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; arr.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">let</span> sum = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &#x3C; arr[i].<span class="hljs-property">length</span>; j++) {
+      sum += arr[i][j]
+    }
+    result.<span class="hljs-title function_">push</span>(sum)
+  }
+</code></pre>
+<p>The time complexity of this algorithm is O(n<sup>m</sup>) where m is the number of dimensions (2 in this case) and n is the size of each array.</p>
+<p>Taking the two examples above, we can easily see that logic used to deduce a solution for the bubble sort can easily be applied to the second problem.</p>
+<p>However, there exist a set problems that have only been proven to be solved with an exponential-time algorithm (O(2<sup>n</sup>)). These problems are known as NP problems.</p>
+<p><img src="/images/p_np.png" alt=">Diagram of P ≠ NP">
+<img src ="/images/p_np.png" style="max-width: 100%" alt=">Diagram of P ≠ NP" /></p>
+<p><small>Diagram of P ≠ NP (left) and P = NP (right). It is widely believed that P ≠ NP.</small></p>
+<h3>NP (non-deterministic polynomial time)</h3>
+<p>NP problems consist of the set of problems whose solution can be verified in polynomial time but there is no known algorithm that can easily solve them. Examples include 0-1 Knapsack, the traveling salesman, boolean satisfiability problem, and the subset sum problem. P problems were once NP problems proven to be solvable in polynomial time.</p>
+<p>NP complexity class of problems can be broken down into three sets: NP, NP-Hard, and NP-Complete.</p>
+<h3>NP-Hard and NP-Complete</h3>
+<p>For a problem to belong to the NP set, it has to be a decision problem with solutions of polynomial length.</p>
+<p>NP-hardness refers to the set of problems that are at least as hard as the hardest problems in NP. The hardest of these problems are NP-Complete. If you take a look at the diagram above of P ≠ NP, you can see that NP-Hard problems cab be neither NP-Complete nor NP. These problems are difficult or impossible to check if they are decidable (returning a true of false value). An example of an NP is the halting problem. The halting problem tries to verify if given an algorithm, will it halt or continue in an infinite loop. There is no existing algorithm that can prove if a function will halt or run forever.</p>
+<p>NP-Complete problems are NP-Hard problems that have been proven to be decidable in polynomial time (NP-Complete is a subset of NP and NP-Hard). A very good is Sudoku. In an NxN grid where N is the number of rows and columns, the number in a cell should be unique for it's row and column. When a Sudoku grid is solved, it's fairly easy to verify the solution:</p>
+<p>Here is a quick solution using a nested loop that checks if each row in the grid has a unique value.</p>
+<pre><code class="hljs language-javascript">  <span class="hljs-keyword">const</span> grid = <span class="hljs-title function_">completeGrid</span>()
+  <span class="hljs-keyword">const</span> isSolved = <span class="hljs-literal">true</span>
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = grid; i &#x3C; grid.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">const</span> unique = []
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = grid; j &#x3C; grid.<span class="hljs-property">length</span>; j++) {
+      <span class="hljs-keyword">const</span> cell = grid[i][j]
+      
+      <span class="hljs-keyword">if</span> (unique.<span class="hljs-title function_">includes</span>(cell)) {
+        isSolved = <span class="hljs-literal">false</span>
+        <span class="hljs-keyword">break</span>
+      }
+
+      unique.<span class="hljs-title function_">push</span>(cell)
+    } 
+  }
+</code></pre>
+<p>The time complexity for the alogirithm will alway be O(n<sup>n</sup>) irrespective of how large the grid is. The question is what is the complexity of the <code>completeGrid</code> function.</p>
+<p>This is different when we want to write an algorithm that can solve an NxN sudoku grid where N can be a very large number.</p>
+<h3>Why is the P versus NP problem important?</h3>
+<p>If it can be proven to solve just one problem in NP-Complete polynomial time, all NP problems become P problems. That means that problems that we taught were initially hard will become very easy to solve. This will open to a vast improvement and milestones in technology such as in the field of medicine where we can easily find cures to complex diseases and even cancer. However, it would pose a significant negative impact on crytopgraphy, which depends on algorithms that are NP-hard.</p>
+<div class="divider"></div>
+<h3>Resources</h3>
+<ul>
+<li><strong>Introduction to Algorithms</strong> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</li>
+<li><a href="https://www.youtube.com/watch?v=YX40hbAHx3s">P vs. NP and the Computational Complexity Zoo</a> (Youtube video)</li>
+<li><a href="https://www.youtube.com/watch?v=e2cF8a5aAhE">NP-Hard and NP-Complete Problems</a> (Youtube video)</li>
+<li><a href="https://news.mit.edu/2009/explainer-pnp">Explained: P vs. NP</a></li>
+</ul></div><div class="divider"></div><div class="tags"><!--[--><div class="tag--bg2 tag">complexity</div><div class="tag--bg5 tag">algorithm</div><div class="tag--bg1 tag">computer science</div><!--]--></div><div class="divider"></div></div></main><footer><span class="copyright">© 2019-present Uche&#39;s Coding Corner. All Rights Reserved.</span></footer><!--]--></div>
   </body>
 </html>

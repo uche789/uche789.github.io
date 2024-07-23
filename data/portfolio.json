@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "title": "planner.",
+      "description": "A planner app combining to-do lists and habit tracking.",
+      "technologies": [
+        "Typescript",
+        "Vue",
+        "Vitest",
+        "Web Workers",
+        "IndexDB",
+        "PWA"
+      ],
+      "link": {
+        "url": "https://simplearchitect.dev/projects/planner/setup",
+        "displayText": "Demo"
+      }
+    },
+    {
+      "title": "CalendarBits",
+      "description": "CalendarBits is a lightweight library for building calendar or date picker UI without the tedious groundwork.",
+      "technologies": [
+        "Javascript"
+      ],
+      "link": {
+        "url": "https://github.com/uche789/calendar-bits",
+        "displayText": ""
+      }
+    },
+    {
+      "title": "Next.js Headless blog CMS",
+      "description": "Currently implementing a blog CMS using Next.js and Postgres.",
+      "technologies": [
+        "Next.js",
+        "Typescript",
+        "Postgres"
+      ],
+      "dueDate": "2024/09/31"
+    }
+  ]
+}

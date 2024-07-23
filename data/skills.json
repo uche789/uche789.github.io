@@ -69,6 +69,26 @@
         "name": "Radical Candor",
         "author": "Kim Scott",
         "description": ""
+      },
+      {
+        "name": "The Manager's Path",
+        "author": "Camille Fournier",
+        "description": ""
+      },
+      {
+        "name": "The Checklist Manisfesto",
+        "author": "Atul Gawande",
+        "description": ""
+      },
+      {
+        "name": "The Clean Coder",
+        "author": "Robert Cecil Martin",
+        "description": ""
+      },
+      {
+        "name": "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations",
+        "author": "Nicole Forsgren, PhD, Jez Humble, Gene Kim",
+        "description": ""
       }
     ],
     "podcasts": [
@@ -128,6 +148,11 @@
         "name": "Coursera",
         "link": "https://www.coursera.org/",
         "description": "A platform that offers courses covering a wide variety of tech and non-tech topics."
+      },
+      {
+        "name": "Monorepo",
+        "link": "https://monorepo.tools/",
+        "description": "Everything you need to know about monorepos, and the tools to build them."
       }
     ]
   }

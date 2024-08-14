@@ -46,7 +46,7 @@
     },
     {
       "label": "Postgres",
-      "level": 1
+      "level": 3
     },
     {
       "label": "Docker / Kubenetes",

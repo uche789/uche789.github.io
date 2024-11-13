@@ -7,22 +7,24 @@
       "Jest",
       "Vitest",
       "PHP",
-      "Node Express",
+      "Node",
       "Typescript",
       "SCSS / CSS3",
       "HTML",
       "Figma",
-      "Relational Databases",
+      "MySQL",
+      "SqLite",
       "Scrum",
       "Agile",
-      "Project management"
+      "Project management",
+      "Python"
     ],
     "prior": [
       "ASP.NET",
       "C#",
       "Java",
       "Azure Cloud",
-      "Nightwatch"
+      "Microsoft SQL Server"
     ],
     "languages": [
       "English (Native)",
@@ -33,15 +35,15 @@
   },
   "learning": [
     {
-      "label": "Symfony",
-      "level": 1
-    },
-    {
       "label": "PWA",
       "level": 4
     },
     {
-      "label": "Next.JS",
+      "label": "Next",
+      "level": 3
+    },
+    {
+      "label": "Python",
       "level": 3
     },
     {
@@ -153,6 +155,21 @@
         "name": "Monorepo",
         "link": "https://monorepo.tools/",
         "description": "Everything you need to know about monorepos, and the tools to build them."
+      },
+      {
+        "name": "Refactoring.Guru",
+        "link": "https://refactoring.guru/",
+        "description": "Everything you need to know you need to know about refactoring, design patterns, SOLID principles, and more."
+      },
+      {
+        "name": "NN/g",
+        "link": "https://www.nngroup.com/",
+        "description": "The source for UX guidance and training."
+      },
+      {
+        "name": "WebAIM",
+        "link": "https://webaim.org/",
+        "description": "Offers resources and training to empower individuals and organizations to create accessible content."
       }
     ]
   }

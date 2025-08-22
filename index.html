@@ -32,7 +32,7 @@
                     link: 'https://github.com/uche789/learn-languages',
                     demo: 'https://tomostudy.uchecodes.dev/',
                     description: 'An educational project that helps learners practice and track their progress while studying new languages.',
-                    technologies: 'React, Contentful, Typescript, Sass/CSS, Vite, Python, Postgres'
+                    technologies: 'React, Contentful, Typescript, TailwindCss, Vite, Python, Postgres'
                 },
                 {
                     name: 'CalendarBits',
@@ -45,7 +45,7 @@
                     name: 'Planner',
                     link: 'https://uchecodes.dev/projects/planner/',
                     description: 'A simple productivity tool designed to help organize tasks, manage schedules, and stay on top of goals.',
-                    technologies: 'IndexDB, Vue 3, Typescript, Sass/CSS, Vite'
+                    technologies: 'IndexDB, Vue 3, Typescript, Sass/CSS, Vite, Pinia'
                 }
             ] }">
                 <template x-for="(project, index) in projects" :key="index">
@@ -58,7 +58,7 @@
                                 class="hover:underline">demo</a>)</span></template> - <span
                             x-text="project.description"></span>
                         <br>
-                        <span class="text-sm text-gray-600 dark:text-gray-400" x-text="project.technologies"></span>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Technologies: <span x-text="project.technologies"></span>
                     </li>
                 </template>
             </ul>

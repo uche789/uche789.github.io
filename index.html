@@ -43,8 +43,7 @@
                 },
                 {
                     name: 'Planner',
-                    link: 'https://github.com/uche789/planner',
-                    demo: 'https://uchecodes.dev/projects/planner/',
+                    link: 'https://uchecodes.dev/projects/planner/',
                     description: 'A simple productivity tool designed to help organize tasks, manage schedules, and stay on top of goals.',
                     technologies: 'IndexDB, Vue 3, Typescript, Sass/CSS, Vite'
                 }
@@ -54,9 +53,9 @@
                         <a :href="project.link" target="_blank" rel="noopener noreferrer"
                             class="dark:text-rose-400 text-rose-600 font-semibold hover:underline">
                             <span x-text="project.name"></span>
-                        </a> (<template x-if="project.demo"><a :href="project.demo" target="_blank"
+                        </a> <template x-if="project.demo"><span>(<a :href="project.demo" target="_blank"
                                 rel="noopener noreferrer"
-                                class="hover:underline">demo</a></template>) - <span
+                                class="hover:underline">demo</a>)</span></template> - <span
                             x-text="project.description"></span>
                         <br>
                         <span class="text-sm text-gray-600 dark:text-gray-400" x-text="project.technologies"></span>

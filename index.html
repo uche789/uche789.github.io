@@ -24,9 +24,9 @@
             <a class="text-current rounded-md block border border-2 px-4 py-2 font-semibold no-underline hover:bg-gray-100 dark:hover:bg-gray-700"
                 href="https://github.com/uche789?tab=repositories">GitHub</a>
         </div>
-        <div class="mt-8 max-w-2xl dark:bg-gray-700 bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h2 class="text-xl text-center font-semibold mt-8">Projects / Repositories:</h2>
-            <ul class="mt-4 space-y-3 list-disc list-inside text-gray-800 dark:text-gray-200" x-data="{ projects: [
+        <h2 class="text-xl text-center font-semibold mt-8">Projects / Repositories:</h2>
+        <div class="mt-8 max-w-2xl">
+            <ul class="space-y-3" x-data="{ projects: [
                 {
                     name: 'Learn Languages',
                     link: 'https://github.com/uche789/learn-languages',
@@ -46,10 +46,17 @@
                     link: 'https://uchecodes.dev/projects/planner/',
                     description: 'A simple productivity tool designed to help organize tasks, manage schedules, and stay on top of goals.',
                     technologies: 'IndexDB, Vue 3, Typescript, Sass/CSS, Vite, Pinia'
+                },
+                {
+                    name: 'Managing Theme Using CSS Variables',
+                    link: 'https://github.com/uche789/theme-css-example',
+                    demo: 'https://uchecodes.dev/projects/theme-css-example/',
+                    description: 'A simple productivity tool designed to help organize tasks, manage schedules, and stay on top of goals.',
+                    technologies: 'IndexDB, Vue 3, Typescript, Sass/CSS, Vite, Pinia'
                 }
             ] }">
                 <template x-for="(project, index) in projects" :key="index">
-                    <li>
+                    <li class="mt-4 dark:bg-gray-700 bg-gray-100 p-6 rounded-lg shadow-lg text-gray-800 dark:text-gray-200">
                         <a :href="project.link" target="_blank" rel="noopener noreferrer"
                             class="dark:text-rose-400 text-rose-600 font-semibold hover:underline">
                             <span x-text="project.name"></span>

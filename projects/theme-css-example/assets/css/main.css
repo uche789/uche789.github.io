@@ -1,3 +1,5 @@
+@import url('shared-variables.css');
+
 html,
 body {
     height: 100%;
@@ -25,6 +27,10 @@ a {
     font-weight: var(--a-font-weight);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
 .tab {
     margin-left: 20px;
 }
@@ -34,12 +40,10 @@ a:hover {
     color: var(--a-hover-color);
 }
 
-.content {
-    background-color: white;
-    width: 1024px;
+main {
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 5px;
-    box-sizing: border-box;
+    padding: 16px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -69,6 +73,11 @@ select {
     min-height: 40px;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-bgcolor);
+}
+
 .btn:focus {
     outline:0;
 }
@@ -80,7 +89,7 @@ select {
 
 }
 .btn-primary:hover {
-    background-color: var(--button-primary-focus-bgcolor);
+    background-color: var(--button-primary-hover-bgcolor);
     border-color: var(--button-primary-focus-border-color);
 }
 
@@ -90,7 +99,7 @@ select {
     border-color: var(--button-secondary-border-color);
 }
 .btn-secondary:hover {
-    background-color: var(--button-secondary-focus-bgcolor);
+    background-color: var(--button-secondary-hover-bgcolor);
     border-color: var(--button-secondary-focus-border-color);
 }
 
@@ -98,6 +107,7 @@ select {
     background-color: var(--button-disabled-bgcolor);
     color: var(--button-disabled-text-color);
     border-color: var(--button-disabled-border-color);
+    cursor: not-allowed;
 }
 
 .inline {

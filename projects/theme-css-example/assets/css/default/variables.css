@@ -20,22 +20,19 @@
     --button-text-color: #5592a7;
     --button-bgcolor: white;
     --button-border-color: #5592a7;
+    --button-hover-bgcolor: #f0f0f0;
 
     --button-primary-text-color: white;
     --button-primary-bgcolor: #5592a7;
     --button-primary-border-color: #5592a7;
-    --button-primary-focus-bgcolor: #386472;
+    --button-primary-hover-bgcolor: #386472;
     --button-primary-focus-border-color: #386472;
 
     --button-secondary-text-color: white;
     --button-secondary-bgcolor: #8faab3; 
     --button-secondary-border-color: #8faab3; 
-    --button-secondary-focus-bgcolor: #738d96; 
+    --button-secondary-hover-bgcolor: #738d96; 
     --button-secondary-focus-border-color: #738d96; 
-    
-    --button-disabled-bgcolor: #eee;
-    --button-disabled-border-color: #eee;
-    --button-disabled-text-color: #333;
 
     --select-border: 1px solid #5592a7;
     --select-color: #5592a7;

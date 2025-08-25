@@ -1,28 +1,17 @@
-$(function () {
-    if ($('#theme-selection')[0].value.indexOf('theme') > -1) {
-        $('link[id*=theme]').remove();
-        insertScript($('#theme-selection')[0].value);
-    }
+(function() {
+    const themeSelectEl = document.getElementById('theme-selection');
 
-    $('#theme-selection').change(function (e) {
-        var theme = e.target.value;
-        $('link[id*=theme]').remove();
+    themeSelectEl.addEventListener('change', function() {
+        const selectedTheme = themeSelectEl.value;
+        const getElements = document.querySelectorAll(`link[id=css-theme]`);
 
-        if (theme.indexOf('theme') > -1) {
-            insertScript(theme);
-        }
+        getElements.forEach(link => link.remove());
+
+        const mainThemeLink = document.createElement('link');
+        mainThemeLink.rel = 'stylesheet';
+        mainThemeLink.type = 'text/css';
+        mainThemeLink.id = 'css-theme';
+        mainThemeLink.href = `assets/css/${selectedTheme}/index.css`;
+        document.head.appendChild(mainThemeLink);
     });
-
-    function insertScript(theme) {
-        $('<link>')
-            .appendTo('head')
-            .attr({ type: 'text/css', rel: 'stylesheet', id: theme + '-var' })
-            .attr('href', 'assets/css/' + theme + '-variables.css');
-
-        $('<link>')
-            .appendTo('head')
-            .attr({ type: 'text/css', rel: 'stylesheet', id: theme + '-css' })
-            .attr('href', 'assets/css/' + theme + '.css');
-    }
-});
-
+})()

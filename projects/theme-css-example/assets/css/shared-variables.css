@@ -1,0 +1,25 @@
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+:root {
+    --button-disabled-bgcolor: #eee;
+    --button-disabled-border-color: #eee;
+    --button-disabled-text-color: #333;
+
+    --heading-color: currentColor;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Update CSS variables */
+  }
+}

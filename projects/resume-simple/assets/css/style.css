@@ -515,6 +515,12 @@ textarea {
 
 /*///////////// THEME //////////////////////*/
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Update CSS variables */
+  }
+}
+
 .theme-dark {
   background-color: #000;
   color: #fff;  

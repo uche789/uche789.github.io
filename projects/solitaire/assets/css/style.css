@@ -1,0 +1,41 @@
+#game-container {
+    font-size: 150px;
+}
+
+#card-row {
+    display: flex;
+    align-items: center;
+}
+
+.card-col {
+    position: relative;
+    width: 90px;
+    height: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 5px;
+    background-color: lightgray;
+    width: 90px;
+    height: 90px; */
+}
+
+.card {
+    position: absolute;
+    width: 90px;
+    height: auto;
+    /* position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: white; */
+}
+
+.card.red {
+    color: red;
+}
+
+.card.blue {
+    color: blue;
+}

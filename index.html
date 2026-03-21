@@ -7,6 +7,7 @@
     <title>Uche Codes</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="/assets/style.css"></script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
@@ -20,11 +21,29 @@
                 uchecodes<span style="color: #FF3968;">/dev</span>
             </h1>
         </div>
-        <div class="mt-4">
-            <a class="text-current rounded-md block border border-2 px-4 py-2 font-semibold no-underline hover:bg-gray-100 dark:hover:bg-gray-700"
-                href="https://github.com/uche789?tab=repositories">GitHub</a>
+        <div class="mt-4 flex gap-2" x-data="{ menu: [
+                    {
+                        text: 'Projects',
+                        link: '/'
+                    },
+                    {
+                        text: 'GitHub',
+                        link: 'https://github.com/uche789?tab=repositories'
+                    },
+                    {
+                        text: 'Resources',
+                        link: '/resources.html'
+                    }
+            ]}">
+            <template x-for="(link, index) in menu" :key="index">
+                <a
+                    class="text-current rounded-md block border border-2 px-2 py-1 font-semibold no-underline hover:bg-gray-100 dark:hover:bg-gray-700"
+                    :href="link.link"
+                    x-text="link.text">
+                </a>
+            </template>
         </div>
-        <h2 class="text-xl text-center font-semibold mt-8">Projects / Repositories:</h2>
+        <h2 class="text-xl text-center font-semibold mt-8">Projects</h2>
         <div class="mt-8 max-w-2xl">
             <ul class="space-y-3" x-data="{ projects: [
                 {
@@ -46,13 +65,6 @@
                     demo: 'https://uchecodes.dev/projects/clndrbits/',
                     description: 'A lightweight library for building calendar and date-picker UIs without starting from scratch.',
                     technologies: 'JavaScript'
-                },
-                {
-                    name: 'Managing Theme Using CSS Variables',
-                    link: 'https://github.com/uche789/theme-css-example',
-                    demo: 'https://uchecodes.dev/projects/theme-css-example/',
-                    description: 'A simple productivity tool designed to help organize tasks, manage schedules, and stay on top of goals.',
-                    technologies: 'HTML, CSS, JavaScript'
                 }
             ] }">
                 <template x-for="(project, index) in projects" :key="index">
@@ -71,43 +83,6 @@
             </ul>
         </div>
     </main>
-    <style>
-        /* match these to your string length (13 chars for "annacodes/dev") */
-        @keyframes typing {
-            from {
-                width: 0
-            }
-
-            to {
-                width: 13ch
-            }
-        }
-
-        @keyframes caret {
-            50% {
-                border-color: transparent
-            }
-        }
-
-        .type {
-            width: 13ch;
-            /* characters revealed */
-            animation:
-                typing 1.8s steps(13, end) 1,
-                /* speed & steps */
-                caret .9s step-end infinite;
-            /* blinking cursor */
-        }
-
-        /* Respect reduced motion */
-        @media (prefers-reduced-motion: reduce) {
-            .type {
-                animation: none;
-                border-right-width: 0;
-                width: auto;
-            }
-        }
-    </style>
 </body>
 
 </html>

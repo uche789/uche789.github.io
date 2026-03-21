@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uche Codes</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+    <main class="flex flex-col p-6 items-center justify-center min-h-screen">
+        <!-- <h1 class="text-4xl md:text-7xl">uchecodes<span style="color: #FF3968;">/dev</span></h1> -->
+
+        <div class="mb-4">
+            <h1
+                class="type font-mono text-4xl md:text-7xl text-gray-900 dark:text-gray-100 inline-block overflow-hidden whitespace-nowrap border-r-2 border-current">
+                uchecodes<span style="color: #FF3968;">/dev</span>
+            </h1>
+        </div>
+        <div class="mt-4 flex gap-2" x-data="{ menu: [
+                    {
+                        text: 'Projects',
+                        link: '/'
+                    },
+                    {
+                        text: 'GitHub',
+                        link: 'https://github.com/uche789?tab=repositories'
+                    },
+                    {
+                        text: 'Resources',
+                        link: '/resources.html'
+                    }
+            ]}">
+            <template x-for="(link, index) in menu" :key="index">
+                <a
+                    class="text-current rounded-md block border border-2 px-2 py-1 font-semibold no-underline hover:bg-gray-100 dark:hover:bg-gray-700"
+                    :href="link.link"
+                    x-text="link.text">
+                </a>
+            </template>
+        </div>
+        <h2 class="text-xl text-center font-semibold mt-8">Resources</h2>
+        <div class="mt-8 max-w-2xl">
+            <ul class="space-y-3" x-data="{ projects: [
+                {
+                    name: 'Web.dev',
+                    description: 'Resource for web developers to build better websites',
+                    link: 'https://web.dev/',
+                    type: 'Website',
+                    categories: 'Frontend'
+                },
+                {
+                    name: 'Pragmatic Engineer.com',
+                    link: 'https://www.pragmaticengineer.com/',
+                    description: '-',
+                    type: 'Website',
+                    categories: 'General'
+                },
+                {
+                    name: 'Refactoring.guru',
+                    link: 'https://refactoring.guru/',
+                    description: 'Resources covering various programming topics',
+                    type: 'Website',
+                    categories: 'General'
+                },
+                {
+                    name: 'Martin Fowler',
+                    link: 'https://martinfowler.com/',
+                    description: 'Offical Martin Fowler blog covering topics on software development',
+                    type: 'Website',
+                    categories: 'General'
+                },
+                {
+                    name: 'CSS Tricks',
+                    link: 'https://css-tricks.com/',
+                    description: 'Resources for making websites',
+                    type: 'Website',
+                },
+                {
+                    name: 'Leaddev',
+                    link: 'https://leaddev.com/',
+                    description: 'Website for engineering leaders',
+                    categories: 'Management',
+                    type: 'Website',
+                },
+                {
+                    name: 'Manager tools',
+                    link: 'https://www.manager-tools.com/',
+                    description:  'Website for engineering leaders and career development',
+                    categories: 'Management',
+                    type: 'Website',
+                },
+                {
+                    name: 'Roadmap.sh',
+                    link: 'https://roadmap.sh/',
+                    description: 'Developer roadmaps',
+                    categories: 'General',
+                    type: 'Website',
+                },
+                {
+                    name: 'geeksforgeeks',
+                    link: 'https://www.geeksforgeeks.org/',
+                    description: 'Resources covering programming topics and software development',
+                    categories: 'General',
+                    type: 'Website',
+                },
+                {
+                    name: 'Dynamic Programming',
+                    link: 'https://youtu.be/oBt53YbR9Kk?si=HcPJ_9m33LmZmYeF',
+                    description: 'freecodecamp course',
+                    categories: 'Progamming, Computer Science',
+                    type: 'Youtube',
+                },
+                {
+                    name: 'Data structures & Algorithms course',
+                    link: 'https://youtu.be/RBSGKlAvoiM?si=p6pbxtDi4RnZrfWO',
+                    description: 'freecodecamp course',
+                    categories: 'Progamming, Computer Science',
+                    type: 'Youtube',
+                },
+                {
+                    name: 'Lecture 9 Scalability Harvard Web Development (David Malan)',
+                    link: 'https://youtu.be/-W9F__D3oY4?si=E8Xkk86w4KgnrSoH',
+                    description: 'Havard computer science lecture on web development',
+                    categories: 'Progamming',
+                    type: 'Youtube',
+                }
+            ] }">
+                <template x-for="(project, index) in projects" :key="index">
+                    <li class="mt-4 dark:bg-gray-700 bg-gray-100 p-6 rounded-lg shadow-lg text-gray-800 dark:text-gray-200">
+                        <a :href="project.link" target="_blank" rel="noopener noreferrer"
+                            class="dark:text-rose-400 text-rose-600 font-semibold hover:underline">
+                            <span x-text="project.name"></span>
+                        </a> - <span x-text="project.description"></span>
+                        <br>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Resource type: <span x-text="project.type"></span><br/>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Categories: <span x-text="project.categories"></span>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>
